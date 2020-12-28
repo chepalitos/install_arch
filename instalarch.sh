@@ -1,8 +1,10 @@
 #!/bin/bash
 # sudo pacman -Sy
 # sudo pacman -S git
-# chmod +x instalarch.sh
 # git clone https://github.com/palitoschinos/instalarch
+# cd instalarch
+# chmod +x instalarch.sh
+# ./instalarch.sh
 
 echo -n "Ingrese el numero de la unidad donde se montara /mnt: "
 read -s mnt_number
