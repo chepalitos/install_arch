@@ -1,4 +1,12 @@
 #!/bin/bash
+# pacman -Sy
+# pacman -S git
+# git clone https://github.com/palitoschinos/instalarch
+# cd instalarch
+# chmod +x instalarch.sh
+# ./instalarch.sh
+
+
 # Fully update your Arch system:
 # pacman -Syu  # If a new kernel becomes available and is now installed, reboot, before proceeding.
 
