@@ -1,21 +1,30 @@
 #!/bin/bash
+# Fully update your Arch system:
+# pacman -Syu  # If a new kernel becomes available and is now installed, reboot, before proceeding.
+
+# If you don't have network connectivity in your Arch system, run:
+# systemctl start dhcpcd <ethernet or wlan interface name>
+
+# Now that you have an updated system, do:
+# pacman -S linux-headers
+# pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
+
+
 pacman -S xorg xorg-xinit
+pacman -S xorg-drivers # For all if you do not know
+pacman -S xorg-apps
 
 pacman -S plasma-desktop
 
-pacman -S sddm
+pacman -S konsole dolphin kate Okular KTorrent Falkon Apper discover kdeplasma-addons
+# pacman -S Scribus Konqueror LabPlot Cantor KBibTeX Krita KRDC Krfb Calligra Sheets KTimeTracker firefox KDE Partition Manager pencil2d
 
-pacman -S konsole dolphin kate Okular KTorrent Falkon Apper discover
-# pacman -S Scribus Konqueror LabPlot Cantor KBibTeX Krita KRDC Krfb Calligra Sheets KTimeTracker firefox KDE Partition Manager
-
-pacman -S powerdevil
-pacman -S plasma-pa
+# audio and brightness control
+pacman -S powerdevil plasma-pa
 
 # To enable the Breeze theme for SDDM, you need edit SDDM config file. Type in your terminal:
 # nano /etc/sddm.conf
 # And in the Current theme name, set the theme name to breeze.
-
-pacman -S kdeplasma-addons
 
 pacman -S networkmanager plasma-nm
 
@@ -25,7 +34,9 @@ systemctl disable dhcpcd
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
 
+pacman -S sddm
 sudo systemctl enable sddm
 sudo systemctl start sddm
 
 # pacman -S openconnect networkmanager-openconnect
+echo "are we still alive?"
