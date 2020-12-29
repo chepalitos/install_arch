@@ -54,12 +54,9 @@ echo "are we still alive?"
 # cd package-query/
 # makepkg -si
 # cd ..
-
-# cd /tmp
 # git clone https://aur.archlinux.org/yaourt.git
 # cd yaourt/
 # makepkg -si
 # cd ..
-
 # yaourt -S pamac-aur
 
