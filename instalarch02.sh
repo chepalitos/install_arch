@@ -1,3 +1,11 @@
+#!/bin/bash
+# pacman -Sy
+# pacman -S git
+# git clone https://github.com/palitoschinos/instalarch
+# cd instalarch
+# chmod +x instalarch02.sh
+# ./instalarch02.sh
+
 echo "systemctl enable iwd"
 systemctl enable iwd
 
