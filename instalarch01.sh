@@ -1,7 +1,7 @@
 #!/bin/bash
 # loadkeys es
-# sudo pacman -Sy
-# sudo pacman -S git
+# pacman -Sy
+# pacman -S git
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
 # chmod +x instalarch.sh
