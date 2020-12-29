@@ -1,4 +1,5 @@
 #!/bin/bash
+# loadkeys es
 # sudo pacman -Sy
 # sudo pacman -S git
 # git clone https://github.com/palitoschinos/instalarch
