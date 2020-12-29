@@ -16,14 +16,14 @@ hwclock --show
 
 echo -n "Ingrese el nombre del host: "
 read -s host_name
-echo
+echo $host_name
 echo $host_name > /etc/hostname
 echo -n "Ingrese la contraseña para el host: "
 passwd
 
 echo -n "Ingrese el nombre del usuario: "
 read -s usr_name
-echo -n $usr_name
+echo $usr_name
 useradd -m -G wheel,storage,power -s /bin/bash $usr_name
 echo -n "Ingrese la contraseña para del usuario: "
 passwd $usr_name
