@@ -45,7 +45,7 @@ mkinitcpio -p linux
 
 echo -n "Ingrese el id de la instalacion en para el bootloader: "
 read -s id_name
-echo -n $id_name
+echo $id_name
 
 echo "grub-install"
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=$id_name
