@@ -17,7 +17,7 @@ swapon /dev/sda$swap_number
 
 echo -n "Ingrese el numero de la unidad donde se montara /mnt: "
 read -s mnt_number
-echo $mnt_number"
+echo $mnt_number
 mkfs.ext4 /dev/sda$mnt_number
 mount /dev/sda$mnt_number /mnt
 
