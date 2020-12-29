@@ -24,7 +24,7 @@ pacman -S xorg-apps
 
 pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-control-center xdg-user-dirs gnome-keyring  gnome-system-monitor 
 pacman -S --needed base-devel git wget yajl
-pacman -S genome-shell-extensions gnome-software-center papirus-icon-theme totem evince epiphany recapp gnome-screenshot
+pacman -S genome-shell-extensions gnome-software papirus-icon-theme totem evince epiphany recapp gnome-screenshot
 # pacman -S latexila gtg gitg file-roller go
 
 # nano /etc/locale.gen # uncomment the needed lines like: es_Es.UTF-8 or es_AR.UTF-8
@@ -59,4 +59,3 @@ echo "are we still alive?"
 # makepkg -si
 # cd ..
 # yaourt -S pamac-aur
-
