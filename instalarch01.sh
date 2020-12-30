@@ -7,6 +7,8 @@
 # chmod +x instalarch.sh
 # ./instalarch.sh
 
+# ls /sys/firmware/efi # To enshure it is it UEFI
+
 timedatectl set-ntp true
 loadkeys es
 lsblk
