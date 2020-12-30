@@ -1,3 +1,6 @@
+
+
+ls /sys/firmware/efi # To enshure it is it UEFI
 lsblk
 pacman -Sy refind-efi refind git
 refind-instal
