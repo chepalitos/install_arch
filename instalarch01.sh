@@ -8,6 +8,8 @@
 # ./instalarch.sh
 
 timedatectl set-ntp true
+loadkeys es
+lsblk
 
 echo -n "Ingrese el numero de la unidad donde se montara /swap: "
 read -s swap_number
