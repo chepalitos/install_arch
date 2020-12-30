@@ -8,9 +8,12 @@
 # ./instalarch.sh
 
 # ls /sys/firmware/efi # To enshure it is it UEFI
+# lsblk
+
+# mkfs.vfat -F 32 /dev/sdXX
+# mkfs.ext4 /dev/sdXY
 
 timedatectl set-ntp true
-loadkeys es
 lsblk
 
 echo -n "Ingrese el numero de la unidad donde se montara /swap: "
