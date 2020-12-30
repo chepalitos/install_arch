@@ -31,6 +31,7 @@ mount /dev/sda2 /mnt/boot
 mkdir /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
 
+# pacstrap /mnt base base-devel efibootmgr grub net-tools
 pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-headers nano dhcpcd iwd lvm2 linux-firmware --noconfirm
 
 genfstab -U /mnt >> /mnt/etc/fstab
