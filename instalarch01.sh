@@ -44,7 +44,7 @@ mount /dev/sda$home_number /mnt/home
 findmt -n -o SOURCE --target /home
 
 # pacstrap /mnt base base-devel efibootmgr grub net-tools
-pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-headers nano dhcpcd iwd lvm2 linux-firmware --noconfirm
+pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-headers nano dhcpcd iwd lvm2 linux-firmware
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
