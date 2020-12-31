@@ -1,7 +1,7 @@
 #!/bin/bash
 # pacman -Sy
 # pacman -S git
-# cd /tmp
+
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
 # chmod +x instalarch.sh
