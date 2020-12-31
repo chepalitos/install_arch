@@ -37,14 +37,16 @@ mount /dev/sda1 /mnt/boot/efi
 echo -n "Ingrese el numero de la unidad donde se montara /home: "
 read -s home_number
 echo $home_number
+mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
 
 # Check where is home mounted
 findmt -n -o SOURCE --target /home
 
-# pacstrap /mnt base base-devel efibootmgr grub net-tools
-pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-headers nano dhcpcd iwd lvm2 linux-firmware
+pacstrap /mnt base linux linux-firmware efibootmgr grub nano dhcpcd iwd
+# pacstrap /mnt base base-devel net-tools
+# pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-headers nano dhcpcd iwd lvm2 linux-firmware net-tools
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
