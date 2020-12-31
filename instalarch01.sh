@@ -39,6 +39,6 @@ pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-arch-chroot /mnt /bin/bash << EOF
+arch-chroot /mnt /bin/bash
 
 echo "are we still alive?"
