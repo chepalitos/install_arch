@@ -34,6 +34,12 @@ mount /dev/sda2 /mnt/boot
 mkdir /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
 
+echo -n "Ingrese el numero de la unidad donde se montara /home: "
+read -s home_number
+echo $home_number
+mkfs.ext4 /dev/sda$home_number
+mount /dev/sda$mnt_number /mnt
+
 # pacstrap /mnt base base-devel efibootmgr grub net-tools
 pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-headers nano dhcpcd iwd lvm2 linux-firmware --noconfirm
 
