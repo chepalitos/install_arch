@@ -59,7 +59,5 @@ exit
 umount -R /mnt
 swapoff -a
 
-# Check where is home mounted
-findmt -n -o SOURCE --target /home
 # Reboot and Enjoy Your Encrypted Arch Linux System!
 reboot
