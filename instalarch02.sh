@@ -10,9 +10,13 @@ echo "systemctl enable iwd"
 systemctl enable iwd
 
 echo "set hwclock"
-ln -s /usr/share/zoneinfo/Argentina/Buenos_Aires /etc/localtime
-hwclock --systohc --utc
-hwclock --show
+
+timedatectl set-ntp yes
+timedatectl set-timezone America/Argentina/Buenos_Aires
+
+# ln -s /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
+# hwclock --systohc --utc
+# hwclock --show
 
 echo -n "Ingrese el nombre del host: "
 read -s host_name
