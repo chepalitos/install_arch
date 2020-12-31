@@ -21,10 +21,10 @@
 pacman -S xorg 
 pacman -S xorg-drivers xorg-xinit xorg-apps
 
-pacman -S plasma-desktop
-
-pacman -S konsole dolphin kate Okular KTorrent Falkon Apper discover kdeplasma-addons
+pacman -S plasma-desktop konsole dolphin kate Okular KTorrent Falkon Apper discover kdeplasma-addons
+# pacman -S konsole dolphin kate Okular KTorrent Falkon Apper discover kdeplasma-addons
 # pacman -S Scribus Konqueror LabPlot Cantor KBibTeX Krita KRDC Krfb Calligra Sheets KTimeTracker firefox KDE Partition Manager pencil2d
+# pacman numix-adapta
 
 # audio and brightness control
 pacman -S powerdevil plasma-pa
