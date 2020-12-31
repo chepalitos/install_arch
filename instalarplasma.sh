@@ -18,9 +18,8 @@
 # pacman -S linux-headers
 # pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
 
-pacman -S xorg xorg-xinit
-pacman -S xorg-drivers # For all if you do not know
-pacman -S xorg-apps
+pacman -S xorg 
+pacman -S xorg-drivers xorg-xinit xorg-apps
 
 pacman -S plasma-desktop
 
