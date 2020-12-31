@@ -39,6 +39,10 @@ read -s home_number
 echo $home_number
 mount /dev/sda$home_number /mnt/home
 
+
+# Check where is home mounted
+findmt -n -o SOURCE --target /home
+
 # pacstrap /mnt base base-devel efibootmgr grub net-tools
 pacstrap /mnt base base-devel grub efibootmgr dialog wpa_supplicant linux linux-headers nano dhcpcd iwd lvm2 linux-firmware --noconfirm
 
