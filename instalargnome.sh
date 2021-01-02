@@ -23,7 +23,7 @@ pacman -S xorg-drivers # For all if you do not know
 pacman -S xorg-apps
 
 pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-control-center xdg-user-dirs gnome-keyring gnome-system-monitor gdm
-pacman -S genome-shell-extensions gnome-software papirus-icon-theme totem evince epiphany gnome-screenshot gedit
+# pacman -S genome-shell-extensions gnome-software papirus-icon-theme totem evince epiphany gnome-screenshot gedit
 # pacman -S latexila gtg gitg file-roller go recapp
 
 # nano /etc/locale.gen # uncomment the needed lines like: es_Es.UTF-8 or es_AR.UTF-8
@@ -36,8 +36,8 @@ pacman -S networkmanager
 systemctl stop dhcpcd
 systemctl disable dhcpcd
 
-sudo systemctl enable NetworkManager
-sudo systemctl start NetworkManager
+systemctl enable NetworkManager
+systemctl start NetworkManager
 
 pacman -S gdm
 systemctl enable gdm
