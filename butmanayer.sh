@@ -1,9 +1,10 @@
-
+#!/bin/bash
+# loadkeys es
 
 ls /sys/firmware/efi # To enshure it is it UEFI
 lsblk
 pacman -Sy refind-efi refind git
-refind-instal
+refind-install
 cd /boot/efi/EFI/refind
 mkdir theme
 cd theme
