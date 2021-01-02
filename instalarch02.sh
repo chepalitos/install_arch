@@ -6,8 +6,7 @@
 # chmod +x instalarch02.sh
 # ./instalarch02.sh
 
-# echo "systemctl enable iwd"
-systemctl enable iwd
+# systemctl enable iwd
 
 #echo "set hwclock"
 # timedatectl set-ntp yes
@@ -39,30 +38,27 @@ echo -e "::1\t\tlocalhost" >> /etc/hosts
 echo -e "127.0.1.1\t$host_name.$usr_name $host_name" >> /etc/hosts
 cat /etc/hosts
 
-#echo "locale-gen"
+
 locale-gen
 
-#echo "mkinitcpio"
 mkinitcpio -p linux
 
 echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
 read -s id_name
 echo $id_name
 
-echo "grub-install"
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=$id_name
 
-echo "grub-mkconfig"
 #pacman -S os-prober
 #os-prober
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # Exit Your New Arch System
-exit
+# exit
 
 # Unmount all partitions
-umount -R /mnt
-swapoff -a
+# umount -R /mnt
+# swapoff -a
 
 # Reboot and Enjoy Your Encrypted Arch Linux System!
-reboot
+# reboot
