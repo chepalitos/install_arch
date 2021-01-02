@@ -31,6 +31,7 @@ pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-control-cen
 # locale-gen
 # localectl set-locale LANG="en_US.UTF-8"
 # localectl set-x11-keymap es
+# localectl bluez bluez-utils
 
 pacman -S networkmanager
 
