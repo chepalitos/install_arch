@@ -22,7 +22,7 @@ pacman -S xorg xorg-xinit
 pacman -S xorg-drivers # For all if you do not know
 pacman -S xorg-apps
 
-pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-control-center xdg-user-dirs gnome-keyring gnome-system-monitor gdm
+pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-control-center xdg-user-dirs gnome-keyring gnome-system-monitor gdm network-manager-applet
 # pacman -S genome-shell-extensions gnome-software papirus-icon-theme totem evince epiphany gnome-screenshot gedit eye
 # pacman -S latexila gtg gitg file-roller go recapp
 # pacman -Syu xf86-input-wacom
