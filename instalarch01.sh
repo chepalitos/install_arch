@@ -52,7 +52,7 @@ mount /dev/sda$home_number /mnt/home
 # Check where is home mounted
 # findmt -n -o SOURCE --target /home
 
-pacstrap /mnt base base-devel
+pacstrap /mnt base base-devel linux-firmware efibootmgr grub nano man-pages iwd lvm2
 
 # pacstrap /mnt base linux linux-firmware efibootmgr grub nano dhcpcd iwd lvm2 net-tools man-pages
 # pacstrap /mnt base base-devel net-tools
