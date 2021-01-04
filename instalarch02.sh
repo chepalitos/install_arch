@@ -1,12 +1,11 @@
 #!/bin/bash
-# pacman -Sy git
+# pacman -S git
 # cd tmp
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
-# chmod +x instalarch02.sh
-# ./instalarch02.sh
+# source ./instalarch02.sh
 
-systemctl enable iwd
+# systemctl enable iwd
 
 # timedatectl set-ntp yes
 # timedatectl set-timezone America/Argentina/Buenos_Aires
