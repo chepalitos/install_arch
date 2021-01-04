@@ -19,7 +19,7 @@
 # pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
 
 
-pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
+pacman -S xorg-server xorg-xinit xorg-apps xorg-drivers
 
 pacman -S sudo pacman -S xfce4 xfce4-goodies
 
