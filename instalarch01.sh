@@ -48,7 +48,7 @@ mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
 # Check where is home mounted
-# findmt -n -o SOURCE --target /home
+# findmnt -n -o source --target /home
 
 pacstrap /mnt base base-devel linux linux-firmware efibootmgr grub-efi-x86_64 nano man-pages man-pages dhcpcd
 # pacstrap /mnt base linux linux-headers efibootmgr grub-efi-x86_64 nano dhcpcd iwd lvm2 net-tools man-pages dialog dnsutils iputils wpa_supplicant
