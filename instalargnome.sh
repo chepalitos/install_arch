@@ -54,9 +54,6 @@ echo "are we still alive?"
 
 # localectl bluez bluez-utils
 
-# pacman -S --needed base-devel git wget yajl
-# cd /tmp
-
 # pacman -S go
 # git clone https://aur.archlinux.org/yay.git
 # cd yay
