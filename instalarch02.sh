@@ -53,6 +53,8 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=$id_n
 #os-prober
 grub-mkconfig -o /boot/grub/grub.cfg
 
+systemctl enable dhcpcd
+
 # Exit Your New Arch System
 # exit
 
