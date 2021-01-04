@@ -1,16 +1,15 @@
 #!/bin/bash
-# pacman -Sy
-# pacman -S git
+# pacman -Sy git
+# cd tmp
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
 # chmod +x instalarch02.sh
 # ./instalarch02.sh
 
-# systemctl enable iwd
+systemctl enable iwd
 
-#echo "set hwclock"
 # timedatectl set-ntp yes
-#timedatectl set-timezone America/Argentina/Buenos_Aires
+# timedatectl set-timezone America/Argentina/Buenos_Aires
 ln -s /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
 hwclock --systohc --utc
 hwclock --show
