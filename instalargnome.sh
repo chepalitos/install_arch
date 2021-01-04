@@ -4,8 +4,7 @@
 
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
-# chmod +x instalarch.sh
-# ./instalarch.sh
+# source instalarchgnome.sh
 
 # If you don't have network connectivity in your Arch system, run:
 # systemctl start dhcpcd <ethernet or wlan interface name>
@@ -18,19 +17,16 @@
 # pacman -S linux-headers
 # pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
 
+pacman -S xorg
+pacman -S xf86-video-intel
+# pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
 
-pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
-
-pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-control-center xdg-user-dirs gnome-keyring gnome-system-monitor gdm network-manager-applet
-# pacman -S genome-shell-extensions gnome-software papirus-icon-theme totem evince epiphany gnome-screenshot gedit eye
+pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-keyring gnome-system-monitor
+# pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet
 # pacman -S latexila gtg gitg file-roller go recapp
-# pacman -Syu xf86-input-wacom
+# pacman -S papirus-icon-theme
 
-# nano /etc/locale.gen # uncomment the needed lines like: es_Es.UTF-8 or es_AR.UTF-8
-# locale-gen
-# localectl set-locale LANG="en_US.UTF-8"
-# localectl set-x11-keymap es
-# localectl bluez bluez-utils
+# pacman -Syu xf86-input-wacom
 
 pacman -S networkmanager
 
@@ -46,17 +42,22 @@ systemctl start gdm
 
 echo "are we still alive?"
 
-# sudo nano /etc/sudoers
+# nano /etc/sudoers
 # user_name ALL=(ALL)  ALL
+
+# nano /etc/locale.gen # uncomment the needed lines like: es_AR ISO-8859-1 and es_AR.UTF-8 UTF-8
+# locale-gen
+
+# localectl set-locale LANG="es_AR.UTF-8"
+# localectl set-x11-keymap es
+
+# localectl bluez bluez-utils
 
 # pacman -S --needed base-devel git wget yajl
 # cd /tmp
-# git clone https://aur.archlinux.org/package-query.git
-# cd package-query/
+
+# pacman -S go
+# git clone https://aur.archlinux.org/yay.git
+# cd yay
 # makepkg -si
-# cd ..
-# git clone https://aur.archlinux.org/yaourt.git
-# cd yaourt/
-# makepkg -si
-# cd ..
-# yaourt -S pamac-aur
+# yay -S pamac-aur-git --noconfirm
