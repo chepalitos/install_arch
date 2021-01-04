@@ -24,7 +24,7 @@ passwd
 echo -n "Ingrese el nombre del usuario: "
 read -s usr_name
 echo $usr_name
-useradd -m -G stroage,power,wheel -s /bin/bash $usr_name
+useradd -m -G storage,power,wheel -s /bin/bash $usr_name
 echo -n "Ingrese la contraseña para del usuario: "
 passwd $usr_name
 
