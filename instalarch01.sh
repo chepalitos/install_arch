@@ -1,11 +1,9 @@
 #!/bin/bash
 # loadkeys es
-# pacman -Sy
-# pacman -S git
+# pacman -Sy git
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
-# chmod +x instalarch.sh
-# ./instalarch.sh
+# source instalarch01.sh
 
 # ls /sys/firmware/efi # To enshure it is it UEFI
 # lsblk
