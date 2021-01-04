@@ -56,9 +56,7 @@ systemctl enable dhcpcd
 # Exit Your New Arch System
 # exit
 
-# Unmount all partitions
 # umount -R /mnt
 # swapoff -a
 
-# Reboot and Enjoy Your Encrypted Arch Linux System!
 # reboot
