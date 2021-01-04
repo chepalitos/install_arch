@@ -25,7 +25,7 @@ passwd
 echo -n "Ingrese el nombre del usuario: "
 read -s usr_name
 echo $usr_name
-useradd -m -G wheel,storage,power -s /bin/bash $usr_name
+useradd -m -G stroage,power,wheel -s /bin/bash $usr_name
 echo -n "Ingrese la contraseña para del usuario: "
 passwd $usr_name
 
@@ -37,7 +37,6 @@ echo -e "127.0.0.1\tlocalhost" > /etc/hosts
 echo -e "::1\t\tlocalhost" >> /etc/hosts
 echo -e "127.0.1.1\t$host_name.$usr_name $host_name" >> /etc/hosts
 cat /etc/hosts
-
 
 locale-gen
 
