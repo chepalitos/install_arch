@@ -21,7 +21,7 @@
 
 pacman -S xorg-server xorg-xinit xorg-apps xorg-drivers
 
-pacman -S sudo pacman -S xfce4 xfce4-goodies
+pacman -S xfce4 xfce4-goodies
 
 # pacman -Syu xf86-input-wacom
 
