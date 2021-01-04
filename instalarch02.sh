@@ -52,7 +52,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable dhcpcd
 
-# Exit Your New Arch System
 # exit
 
 # umount -R /mnt
