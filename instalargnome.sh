@@ -24,10 +24,8 @@ pacman -S xf86-video-intel
 pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-keyring gnome-system-monitor
 # pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet
 # pacman -S latexila gtg gitg file-roller go recapp
-
 pacman -S papirus-icon-theme
-
-# pacman -Syu xf86-input-wacom
+pacman -Syu xf86-input-wacom
 
 pacman -S networkmanager
 
@@ -44,10 +42,7 @@ systemctl start gdm
 echo "are we still alive?"
 
 # nano /etc/sudoers
-# user_name ALL=(ALL)  ALL
-
-# nano /etc/locale.gen # uncomment the needed lines like: es_AR ISO-8859-1 and es_AR.UTF-8 UTF-8
-# locale-gen
+# user_name ALL=(ALL) ALL
 
 # localectl set-locale LANG="es_AR.UTF-8"
 # localectl set-x11-keymap es
