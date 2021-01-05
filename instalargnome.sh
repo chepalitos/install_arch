@@ -23,7 +23,7 @@ pacman -S xf86-video-intel
 
 pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-keyring gnome-system-monitor
 # pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet
-# pacman -S latexila gtg gitg file-roller go recapp
+# pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish
 pacman -S papirus-icon-theme
 pacman -Syu xf86-input-wacom
 
