@@ -36,8 +36,8 @@ systemctl disable dhcpcd
 systemctl enable NetworkManager
 systemctl start NetworkManager
 
-systemctl enable bluetooth.service
 systemctl start bluetooth.service
+systemctl enable bluetooth.service
 
 pacman -S gdm
 systemctl enable gdm
