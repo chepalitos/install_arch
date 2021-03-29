@@ -1,4 +1,5 @@
 #!/bin/bash
+# login as root
 # pacman -Sy
 # pacman -S git
 
@@ -26,7 +27,7 @@ pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-keyring gno
 # pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish
 pacman -S papirus-icon-theme
 pacman -Syu xf86-input-wacom
-pacman -S python-pip
+pacman -S python python-pip
 
 pacman -S networkmanager
 
