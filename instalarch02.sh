@@ -3,7 +3,7 @@
 # cd tmp
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
-# source ./instalarch02.sh
+# source instalarch02.sh
 
 # systemctl enable iwd
 
