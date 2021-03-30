@@ -53,8 +53,10 @@ systemctl start gdm
 
 echo "are we still alive?"
 
+# ctrl + alt + f3
+# login as root
 # nano /etc/sudoers
-# user_name ALL=(ALL) ALL
+# nomre_del_usuario ALL=(ALL) ALL
 
 # localectl set-locale LANG="es_AR.UTF-8"
 # localectl set-x11-keymap es
@@ -62,6 +64,8 @@ echo "are we still alive?"
 # localectl bluez bluez-utils
 
 # pacman -S go
+
+# login as root
 # git clone https://aur.archlinux.org/yay.git
 # cd yay
 # makepkg -si
