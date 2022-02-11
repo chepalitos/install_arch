@@ -64,6 +64,7 @@ echo "are we still alive?"
 # localectl bluez bluez-utils
 
 # pacman -S go
+# sudo pacman -S gnome-control-center
 
 # login as root
 # git clone https://aur.archlinux.org/yay.git
