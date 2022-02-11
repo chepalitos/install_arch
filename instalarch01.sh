@@ -2,8 +2,6 @@
 # loadkeys es
 # pacman -Sy git
 # git clone https://github.com/palitoschinos/instalarch
-# cd instalarch
-# source instalarch01.sh
 
 # ls /sys/firmware/efi # To enshure it is it UEFI
 # lsblk
@@ -13,6 +11,13 @@
 
 # if U need to format /boot partition
 # mkfs.ext4 /dev/sdXY
+
+# if U need to know more about your hdrive
+# cfdisk
+# fdisk -l
+
+# cd instalarch
+# source instalarch01.sh
 
 timedatectl set-ntp true
 lsblk
