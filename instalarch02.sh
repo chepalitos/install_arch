@@ -1,6 +1,6 @@
 #!/bin/bash
-# pacman -S git
 # cd tmp
+# pacman -S git
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
 # source instalarch02.sh
