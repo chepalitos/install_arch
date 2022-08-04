@@ -33,14 +33,9 @@ echo $home_number
 mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
-# Check where is home mounted
-# findmnt -n -o source --target /home
+pacstrap /mnt base base-devel linux linux-firmware linux-headers efibootmgr grub-efi-x86_64 dhcpcd net-tools vim lvm2
 
-pacstrap /mnt base base-devel linux linux-firmware efibootmgr grub-efi-x86_64 man-pages man-pages dhcpcd net-tools
-# pacstrap /mnt base linux linux-headers efibootmgr grub-efi-x86_64 nano dhcpcd iwd lvm2 net-tools man-pages dialog dnsutils iputils wpa_supplicant
-# pacstrap /mnt base base-devel net-tools
-# pacstrap /mnt base base-devel grub-efi-x86_64 efibootmgr linux linux-headers nano dhcpcd iwd lvm2 linux-firmware net-tools
-# pacstrap net-tools, dnsutils e iputils dialog wpa_supplicant
+# nano iwd man-pages dialog dnsutils iputils wpa_supplicant
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
