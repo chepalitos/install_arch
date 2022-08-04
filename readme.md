@@ -11,7 +11,7 @@ Verify the boot mode, list the efivars directory:
 ls /sys/firmware/efi/efivars
 ```
 
-Ensure your network interface is listed and enabled, for example with ip-link(8):
+Ensure your network interface is listed and enabled:
 ```
 ip link
 ```
