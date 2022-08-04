@@ -24,7 +24,7 @@ ping archlinux.org
 Install git and clone the repo
 ```
 pacman -Sy git
-git clone https://github.com/palitoschinos/instalarch
+git clone https://github.com/palitoschinos/instalarch.git
 
 ls /sys/firmware/efi To enshure it is it UEFI
 lsblk
