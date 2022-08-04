@@ -1,14 +1,5 @@
 #!/bin/bash
-# cd tmp
-# pacman -S git
-# git clone https://github.com/palitoschinos/instalarch
-# cd instalarch
-# source instalarch02.sh
 
-# systemctl enable iwd
-
-# timedatectl set-ntp yes
-# timedatectl set-timezone America/Argentina/Buenos_Aires
 ln -s /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
 hwclock --systohc --utc
 hwclock --show
@@ -51,11 +42,11 @@ echo $id_name
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=$id_name
 
-#pacman -S os-prober
-#os-prober
 grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable dhcpcd
+
+echo "are we still alive?"
 
 # exit
 

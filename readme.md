@@ -48,4 +48,18 @@ Check where is home mounted
 findmnt -n -o source --target /home
 ```
 
+are we still alive?
 
+```
+systemctl enable iwd
+timedatectl set-ntp yes
+timedatectl set-timezone America/Argentina/Buenos_Aires
+
+cd tmp
+pacman -S git
+git clone https://github.com/palitoschinos/instalarch
+cd instalarch
+source instalarch02.sh
+```
+
+are we still alive?
