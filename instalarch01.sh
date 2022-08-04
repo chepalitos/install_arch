@@ -33,9 +33,9 @@ echo $home_number
 mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt base linux linux-firmware
 
-# linux-headers efibootmgr grub-efi-x86_64 dhcpcd net-tools vim lvm2
+# linux-headers efibootmgr grub-efi-x86_64 dhcpcd net-tools vim lvm2 base-devel
 
 # nano iwd man-pages dialog dnsutils iputils wpa_supplicant
 
