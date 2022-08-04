@@ -6,11 +6,6 @@ Load es kayboard
 loadkeys es
 ```
 
-Verify the boot mode, list the efivars directory:
-```
-ls /sys/firmware/efi/efivars
-```
-
 Ensure your network interface is listed and enabled:
 ```
 ip link
@@ -25,8 +20,17 @@ Install git and clone the repo
 ```
 pacman -Sy git
 git clone https://github.com/palitoschinos/instalarch.git
+```
 
-ls /sys/firmware/efi To enshure it is it UEFI
+Verify the boot mode, list the efivars directory:
+```
+ls /sys/firmware/efi/efivars
+```
+
+To know more about your hdrive
+```
+cfdisk
+fdisk -l
 lsblk
 ```
 
@@ -40,11 +44,7 @@ To format /boot partition
 mkfs.ext4 /dev/sdXY
 ```
 
- To know more about your hdrive
-```
-cfdisk
-fdisk -l
-```
+
 
 Run first script
 ```
