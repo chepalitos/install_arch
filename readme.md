@@ -6,6 +6,21 @@ Load es kayboard
 loadkeys es
 ```
 
+Verify the boot mode, list the efivars directory:
+```
+ls /sys/firmware/efi/efivars
+```
+
+Ensure your network interface is listed and enabled, for example with ip-link(8):
+```
+ip link
+```
+
+The connection may be verified with ping:
+```
+ping archlinux.org
+```
+
 Install git and clone the repo
 ```
 pacman -Sy git
