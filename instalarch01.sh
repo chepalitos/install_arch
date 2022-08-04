@@ -9,7 +9,7 @@ echo $swap_number
 mkswap /dev/sda$swap_number
 swapon /dev/sda$swap_number
 
-echo -n "Ingrese el numero de la unidad donde se montara /root : "
+echo -n "Ingrese el numero de la unidad donde se montara /root: "
 read -s mnt_number
 echo $mnt_number
 mkfs.ext4 /dev/sda$mnt_number
@@ -36,7 +36,7 @@ mount /dev/sda$home_number /mnt/home
 # Check where is home mounted
 # findmnt -n -o source --target /home
 
-pacstrap /mnt base base-devel linux linux-firmware efibootmgr grub-efi-x86_64 nano man-pages man-pages dhcpcd
+pacstrap /mnt base base-devel linux linux-firmware efibootmgr grub-efi-x86_64 man-pages man-pages dhcpcd net-tools
 # pacstrap /mnt base linux linux-headers efibootmgr grub-efi-x86_64 nano dhcpcd iwd lvm2 net-tools man-pages dialog dnsutils iputils wpa_supplicant
 # pacstrap /mnt base base-devel net-tools
 # pacstrap /mnt base base-devel grub-efi-x86_64 efibootmgr linux linux-headers nano dhcpcd iwd lvm2 linux-firmware net-tools

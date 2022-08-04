@@ -13,17 +13,39 @@ git clone https://github.com/palitoschinos/instalarch
 
 ls /sys/firmware/efi To enshure it is it UEFI
 lsblk
+```
 
-if U need to format /efi partition
+To format /efi partition
+```
 mkfs.vfat -F 32 /dev/sdXX
+```
 
-if U need to format /boot partition
+To format /boot partition
+```
 mkfs.ext4 /dev/sdXY
+```
 
-if U need to know more about your hdrive
+ To know more about your hdrive
+```
 cfdisk
 fdisk -l
+```
 
+Run first script
+```
 cd instalarch
 source instalarch01.sh
 ```
+
+- Ingrese el numero de la unidad donde se montara /swap:
+- Ingrese el numero de la unidad donde se montara /root:
+- Ingrese el numero de la unidad donde se montara /boot:
+- Ingrese el numero de la unidad donde se montara /efi:
+- Ingrese el numero de la unidad donde se montara /home:
+
+Check where is home mounted
+```
+findmnt -n -o source --target /home
+```
+
+
