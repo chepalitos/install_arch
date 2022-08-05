@@ -45,7 +45,9 @@ pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dh
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
+echo "bye bye"
+
 arch-chroot /mnt
 # arch-chroot /mnt /bin/bash
 
-echo "are we still alive?"
+
