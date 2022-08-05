@@ -36,8 +36,8 @@ echo $home_number
 mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
-pacman -Syu
-pacman -S archlinux-keyring
+# pacman -Syu
+pacman -Sy archlinux-keyring
 # pacman-key --refresh-keys
 pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dhcpcd
 
