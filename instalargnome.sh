@@ -29,14 +29,14 @@ pacman -S gnome-shell nautilus gnome-terminal  gnome-keyring gnome-system-monito
 # pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish
 # pacman -S usbutils
 
-pacman -S papirus-icon-theme
+pacman -S papirus-icon-theme gnome-theme-extra
 pacman -Syu xf86-input-wacom
-
-#pacman -S python python-pip
 
 pacman -S networkmanager
 systemctl enable NetworkManager
 systemctl start NetworkManager
+
+pacman -S openssh
 
 #systemctl stop dhcpcd
 #systemctl disable dhcpcd
@@ -55,6 +55,8 @@ systemctl start NetworkManager
 pacman -S gdm
 systemctl enable gdm
 systemctl start gdm
+
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 
 echo "are we still alive?"
 
