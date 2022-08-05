@@ -25,7 +25,8 @@ echo -n "Ingrese el numero de la unidad donde se montara /efi: "
 read -s efi_number
 echo $efi_number
 mkdir /mnt/boot/efi
-mount /dev/sda$efi_number /mnt/boot/efi
+mount /dev/sda$efi_number /mnt/efi
+# mount /dev/sda$efi_number /mnt/boot/efi
 
 echo -n "Ingrese el numero de la unidad donde se montara /home: "
 read -s home_number
@@ -33,6 +34,9 @@ echo $home_number
 mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
+pacman -Syu
+pacman -S archlinux-keyring
+# pacman-key --refresh-keys
 pacstrap /mnt base linux linux-firmware
 
 # linux-headers efibootmgr grub-efi-x86_64 dhcpcd net-tools vim lvm2 base-devel
