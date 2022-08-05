@@ -35,8 +35,8 @@ mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
 pacman -Syu
-pacman -S archlinux-keyring
-# pacman-key --refresh-keys
+# pacman -S archlinux-keyring
+pacman-key --refresh-keys
 pacstrap /mnt base linux linux-firmware
 
 # linux-headers efibootmgr grub-efi-x86_64 dhcpcd net-tools vim lvm2 base-devel
