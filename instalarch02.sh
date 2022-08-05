@@ -12,7 +12,7 @@ echo $host_name > /etc/hostname
 echo -n ">>> Ingrese la contraseña para el host: "
 passwd 
 
-echo "Instalando sudo packages"
+echo -n ">>> Instalando sudo packages"
 pacman -Sy sudo
 
 echo -n ">>> Ingrese el nombre del usuario: "
