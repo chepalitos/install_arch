@@ -12,7 +12,8 @@ echo $host_name > /etc/hostname
 echo -n "Ingrese la contraseña para el host: "
 passwd 
 
-pacman --sync sudo
+echo "Installing sudo packages"
+pacman -Sy sudo
 
 echo -n "Ingrese el nombre del usuario: "
 read -s usr_name
@@ -51,11 +52,12 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable dhcpcd
 
+echo "bye bye?"
+
+exit
+
 echo "are we still alive?"
-
-# exit
-
-# umont -R /mnt
+# umount -R /mnt
 # swapoff -a
 
 # reboot

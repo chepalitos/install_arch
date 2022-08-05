@@ -47,9 +47,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 echo "bye bye"
 
-#arch-chroot /mnt
-arch-chroot /mnt /bin/bash
-
+arch-chroot /mnt
+#arch-chroot /mnt /bin/bash
 echo "still alive"
 
 

@@ -65,7 +65,7 @@ timedatectl set-timezone America/Argentina/Buenos_Aires
 
 second partition
 ```
-cd tmp
+cd /tmp
 pacman -S git
 git clone https://github.com/palitoschinos/instalarch
 cd instalarch
