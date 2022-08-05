@@ -54,7 +54,7 @@ echo "are we still alive?"
 
 # exit
 
-# umount -R /mnt
+# umont -R /mnt
 # swapoff -a
 
 # reboot
