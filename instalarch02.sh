@@ -36,11 +36,12 @@ mkinitcpio -p linux
 
 sed -i 's/root ALL=(ALL) ALL/root ALL=(ALL) ALL\n$usr_name ALL=(ALL) ALL/' /etc/sudoers
 
-echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
-read -s id_name
-echo $id_name
+# echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
+# read -s id_name
+# echo $id_name
 
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=$id_name
+pacman -S grub
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
