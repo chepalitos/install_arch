@@ -61,7 +61,10 @@ deprecated commands
 systemctl enable iwd
 timedatectl set-ntp yes
 timedatectl set-timezone America/Argentina/Buenos_Aires
+```
 
+second partition
+```
 cd tmp
 pacman -S git
 git clone https://github.com/palitoschinos/instalarch
