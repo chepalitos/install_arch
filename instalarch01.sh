@@ -18,13 +18,15 @@ mount /dev/sda$mnt_number /mnt
 echo -n "Ingrese el numero de la unidad donde se montara /boot: "
 read -s boot_number
 echo $boot_number
+mkfs.fat -F32 /dev/sda$boot_number
 mkdir /mnt/boot
 mount /dev/sda$boot_number /mnt/boot
 
 echo -n "Ingrese el numero de la unidad donde se montara /efi: "
 read -s efi_number
 echo $efi_number
-mkdir /mnt/boot/efi
+mkfs.ext4 /dev/sda$efi_number
+mkdir /mnt/efi
 mount /dev/sda$efi_number /mnt/efi
 # mount /dev/sda$efi_number /mnt/boot/efi
 
@@ -35,8 +37,8 @@ mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
 pacman -Syu
-# pacman -S archlinux-keyring
-pacman-key --refresh-keys
+pacman -S archlinux-keyring
+# pacman-key --refresh-keys
 pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dhcpcd
 
 # linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant
