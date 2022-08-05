@@ -37,9 +37,9 @@ mount /dev/sda$home_number /mnt/home
 pacman -Syu
 # pacman -S archlinux-keyring
 pacman-key --refresh-keys
-pacstrap /mnt base linux linux-firmware
+pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel
 
-# linux-headers efibootmgr grub-efi-x86_64 dhcpcd net-tools vim lvm2 base-devel
+# linux-headers efibootmgr dhcpcd net-tools vim lvm2 
 
 # nano iwd man-pages dialog dnsutils iputils wpa_supplicant
 
