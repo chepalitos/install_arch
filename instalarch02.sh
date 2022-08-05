@@ -56,7 +56,6 @@ echo "bye bye?"
 
 exit
 
-echo "are we still alive?"
 # umount -R /mnt
 # swapoff -a
 
