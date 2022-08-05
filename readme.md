@@ -59,7 +59,13 @@ timedatectl set-ntp yes
 timedatectl set-timezone America/Argentina/Buenos_Aires
 ```
 
-second part
+Run first script
+```
+cd instalarch
+source instalarch01.sh
+```
+
+Run second script
 ```
 cd /tmp
 pacman -S git
@@ -67,4 +73,13 @@ git clone https://github.com/palitoschinos/instalarch
 cd instalarch
 source instalarch02.sh
 ```
+
+Reboot:
+```
+umount -R /mnt
+swapoff -a
+reboot
+```
+
+
 

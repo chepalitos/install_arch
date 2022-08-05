@@ -15,6 +15,7 @@
 
 # Fully update your Arch system:
 # pacman -Syu  # If a new kernel becomes available and is now installed, reboot, before proceeding.
+
 # Now that you have an updated system, do:
 # pacman -S linux-headers
 # pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
@@ -23,24 +24,25 @@ pacman -S xorg
 pacman -S xf86-video-intel
 # pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
 
-pacman -S gnome-shell nautilus gnome-terminal gnome-tweak-tool gnome-keyring gnome-system-monitor
-# pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet
+pacman -S gnome-shell nautilus gnome-terminal  gnome-keyring gnome-system-monitor
+# pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet gnome-tweak-tool
 # pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish
 # pacman -S usbutils
+
 pacman -S papirus-icon-theme
 pacman -Syu xf86-input-wacom
-pacman -S python python-pip
+
+#pacman -S python python-pip
 
 pacman -S networkmanager
-
-systemctl stop dhcpcd
-systemctl disable dhcpcd
-
 systemctl enable NetworkManager
 systemctl start NetworkManager
 
-systemctl start bluetooth.service
-systemctl enable bluetooth.service
+#systemctl stop dhcpcd
+#systemctl disable dhcpcd
+
+#systemctl start bluetooth.service
+#systemctl enable bluetooth.service
 
 # First off, I’ll install pulseaudio and the Bluetooth extension.
 #sudo pacman -S pulseaudio
