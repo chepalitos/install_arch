@@ -52,12 +52,6 @@ cd instalarch
 source instalarch01.sh
 ```
 
-- Ingrese el numero de la unidad donde se montara /swap:
-- Ingrese el numero de la unidad donde se montara /root:
-- Ingrese el numero de la unidad donde se montara /boot:
-- Ingrese el numero de la unidad donde se montara /efi:
-- Ingrese el numero de la unidad donde se montara /home:
-
 deprecated commands
 ```
 systemctl enable iwd
