@@ -36,7 +36,7 @@ lsblk
 
 To format /efi partition
 ```
-mkfs.vfat -F 32 /dev/sdXX
+mkfs.fat -F32 /dev/sdXX
 ```
 
 To format /boot partition
