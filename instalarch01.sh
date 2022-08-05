@@ -39,15 +39,17 @@ mount /dev/sda$home_number /mnt/home
 # pacman -Syu
 pacman -Sy archlinux-keyring
 # pacman-key --refresh-keys
-pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dhcpcd
+pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel
 
-# linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant
+# linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
 echo "bye bye"
 
-arch-chroot /mnt
-# arch-chroot /mnt /bin/bash
+#arch-chroot /mnt
+arch-chroot /mnt /bin/bash
+
+echo "still alive"
 
 

@@ -1,8 +1,9 @@
 #!/bin/bash
 
 ln -s /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
-hwclock --systohc --utc
-hwclock --show
+# hwclock --systohc --utc
+hwclock --systohc
+# hwclock --show
 
 echo -n "Ingrese el nombre del host: "
 read -s host_name

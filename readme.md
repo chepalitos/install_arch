@@ -44,8 +44,6 @@ To format /boot partition
 mkfs.ext4 /dev/sdXY
 ```
 
-
-
 Run first script
 ```
 cd instalarch
@@ -58,13 +56,7 @@ source instalarch01.sh
 - Ingrese el numero de la unidad donde se montara /efi:
 - Ingrese el numero de la unidad donde se montara /home:
 
-Check where is home mounted
-```
-findmnt -n -o source --target /home
-```
-
-are we still alive?
-
+deprecated commands
 ```
 systemctl enable iwd
 timedatectl set-ntp yes
