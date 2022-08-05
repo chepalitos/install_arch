@@ -3,6 +3,7 @@
 # pacman -Sy
 # pacman -S git
 
+# cd /tmp
 # git clone https://github.com/palitoschinos/instalarch
 # cd instalarch
 # source instalarchgnome.sh
@@ -40,13 +41,14 @@ systemctl start NetworkManager
 
 systemctl start bluetooth.service
 systemctl enable bluetooth.service
+
 # First off, I’ll install pulseaudio and the Bluetooth extension.
-sudo pacman -S pulseaudio
-sudo pacman -S pulseaudio-bluetooth
+#sudo pacman -S pulseaudio
+#sudo pacman -S pulseaudio-bluetooth
 # Start up pulseaudio:
-sudo systemctl pulseaudio start
+#sudo systemctl pulseaudio start
 # If you want it to start up automatically:
-sudo systemctl start pulseaudio
+#sudo systemctl start pulseaudio
 
 pacman -S gdm
 systemctl enable gdm
