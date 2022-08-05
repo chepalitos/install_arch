@@ -1,6 +1,6 @@
 #!/bin/bash
 
-timedatectl set-ntp true
+#timedatectl set-ntp true
 lsblk
 
 echo -n "Ingrese el numero de la unidad donde se montara /swap: "
@@ -45,10 +45,10 @@ pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-echo "bye bye"
+echo -n "bye bye"
 
 arch-chroot /mnt
 #arch-chroot /mnt /bin/bash
-echo "still alive"
+echo -n "still alive"
 
 

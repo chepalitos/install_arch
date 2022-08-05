@@ -1,6 +1,7 @@
 # Instaling arch linux
 Something like that
 
+## First steps
 Load es kayboard
 ```
 loadkeys es
@@ -14,12 +15,6 @@ ip link
 The connection may be verified with ping:
 ```
 ping archlinux.org
-```
-
-Install git and clone the repo
-```
-pacman -Sy git
-git clone https://github.com/palitoschinos/instalarch.git
 ```
 
 Verify the boot mode, list the efivars directory:
@@ -43,6 +38,13 @@ To format /boot partition
 ```
 mkfs.ext4 /dev/sdXY
 ```
+## Begin installation
+
+Install git and clone the repo
+```
+pacman -Sy git
+git clone https://github.com/palitoschinos/instalarch.git
+```
 
 Run first script
 ```
@@ -63,7 +65,7 @@ timedatectl set-ntp yes
 timedatectl set-timezone America/Argentina/Buenos_Aires
 ```
 
-second partition
+second part
 ```
 cd /tmp
 pacman -S git
@@ -72,4 +74,3 @@ cd instalarch
 source instalarch02.sh
 ```
 
-are we still alive?
