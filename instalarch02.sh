@@ -5,22 +5,22 @@ ln -s /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
 hwclock --systohc
 # hwclock --show
 
-echo -n "Ingrese el nombre del host: "
+echo -n ">>> Ingrese el nombre del host: "
 read -s host_name
 echo $host_name
 echo $host_name > /etc/hostname
-echo -n "Ingrese la contraseña para el host: "
+echo -n ">>> Ingrese la contraseña para el host: "
 passwd 
 
-echo "Installing sudo packages"
+echo "Instalando sudo packages"
 pacman -Sy sudo
 
-echo -n "Ingrese el nombre del usuario: "
+echo -n ">>> Ingrese el nombre del usuario: "
 read -s usr_name
 echo $usr_name
 # useradd -m -G storage,power,wheel -s /bin/bash $usr_name
 useradd --create-home --groups wheel $usr_name
-echo -n "Ingrese la contraseña para del usuario: "
+echo -n ">>> Ingrese la contraseña para del usuario: "
 passwd $usr_name
 
 echo "LANG=es_AR.UTF-8" > /etc/locale.conf
@@ -52,7 +52,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable dhcpcd
 
-echo "bye bye?"
+echo -n "bye bye?"
 
 exit
 
