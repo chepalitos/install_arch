@@ -80,3 +80,5 @@ Then run: sudo locale-gen
 # cd yay
 # makepkg -si
 # yay -S pamac-aur-git --noconfirm
+
+## somre other stuff https://github.com/hannenz/duplicate
