@@ -11,6 +11,10 @@ Ensure your network interface is listed and enabled:
 ```
 ip link
 ```
+Bringing interfaces up/down
+```
+ip link set dev <interface> up ???
+```
 
 The connection may be verified with ping:
 ```
