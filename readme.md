@@ -1,6 +1,10 @@
 # Instaling arch linux
 Something like that
 
+## The official stuff:
+- https://wiki.archlinux.org/title/Installation_guide
+- https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration
+
 ## First steps
 Load es kayboard
 ```
