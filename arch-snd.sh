@@ -20,6 +20,8 @@ read -s usr_name
 echo $usr_name
 # useradd -m -G storage,power,wheel -s /bin/bash $usr_name
 useradd --create-home --groups wheel $usr_name
+sed -i 's/# %whell ALL=(ALL=ALL) ALL/%whell ALL=(ALL=ALL) ALL/' /etc/sudoers
+
 echo -n ">>> Ingrese la contraseña para del usuario: "
 passwd $usr_name
 
