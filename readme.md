@@ -60,8 +60,8 @@ git clone https://github.com/palitoschinos/instalarch.git
 
 Run first script
 ```
-cd instalarch
-source instalarch01.sh
+cd install-arch
+source arch-fst.sh
 ```
 
 deprecated commands
@@ -71,19 +71,13 @@ timedatectl set-ntp yes
 timedatectl set-timezone America/Argentina/Buenos_Aires
 ```
 
-Run first script
-```
-cd instalarch
-source instalarch01.sh
-```
-
 Run second script
 ```
 cd /tmp
 pacman -S git
 git clone https://github.com/palitoschinos/instalarch
 cd instalarch
-source instalarch02.sh
+source arch-snd.sh
 ```
 
 Reboot:
@@ -93,5 +87,11 @@ swapoff -a
 reboot
 ```
 
-
-
+Run third script
+```
+cd /tmp
+pacman -S git
+git clone https://github.com/palitoschinos/instalarch
+cd install-arch
+source <enviroment-name>.sh
+```
