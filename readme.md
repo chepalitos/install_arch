@@ -32,9 +32,13 @@ ls /sys/firmware/efi/efivars
 
 To know more about your hdrive
 ```
-cfdisk
 fdisk -l
 lsblk
+```
+
+To partition your hard drive:
+```
+cfdisk
 ```
 
 To format /efi partition
