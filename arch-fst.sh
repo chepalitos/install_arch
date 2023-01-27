@@ -43,8 +43,8 @@ echo -n "Instalando archlinux-heyring"
 # pacman-key --refresh-keys
 
 echo -n ">>>> Instalando archlinux-heyring"
-# pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dhcpcd
-pacstrap /mnt base linux linux-firmware
+pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dhcpcd
+# pacstrap /mnt base linux linux-firmware
 # linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
 
 genfstab -U /mnt >> /mnt/etc/fstab
