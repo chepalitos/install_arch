@@ -55,7 +55,7 @@ mkfs.ext4 /dev/sdXY
 Install git and clone the repo
 ```
 pacman -Sy git
-git clone https://github.com/palitoschinos/instalarch.git
+git clone https://github.com/palitoschinos/install-arch.git
 ```
 
 Run first script
