@@ -49,7 +49,7 @@ pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dh
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-echo -n ">>> bye bye "
+echo -n ">>> bye bye\n"
 
 arch-chroot /mnt
 #arch-chroot /mnt /bin/bash
