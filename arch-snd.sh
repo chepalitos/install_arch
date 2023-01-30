@@ -20,8 +20,8 @@ read -s usr_name
 echo $usr_name
 # useradd -m -G storage,power,wheel -s /bin/bash $usr_name
 useradd --create-home --groups wheel $usr_name
-sed -i 's/# %whell ALL=(ALL=ALL) ALL/%whell ALL=(ALL=ALL) ALL/' /etc/sudoers
-
+# sed -i 's/#%whell ALL=(ALL=ALL) ALL/%whell ALL=(ALL=ALL) ALL/' /etc/sudoers
+# sed -i 's/root ALL=(ALL) ALL/root ALL=(ALL) ALL\n$usr_name ALL=(ALL) ALL/' /etc/sudoers
 echo -n ">>> Ingrese la contraseña para del usuario: "
 passwd $usr_name
 
@@ -35,13 +35,11 @@ echo -e "::1\t\tlocalhost" >> /etc/hosts
 echo -e "127.0.1.1\t$host_name.$usr_name $host_name" >> /etc/hosts
 cat /etc/hosts
 
-#sed -i 's/#es_AR ISO-8859-1/es_AR ISO-8859-1/' /etc/locale.gen
+sed -i 's/#es_AR ISO-8859-1/es_AR ISO-8859-1/' /etc/locale.gen
 sed -i 's/#es_AR.UTF-8 UTF-8/es_AR.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 
 mkinitcpio -p linux
-
-# sed -i 's/root ALL=(ALL) ALL/root ALL=(ALL) ALL\n$usr_name ALL=(ALL) ALL/' /etc/sudoers
 
 # echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
 # read -s id_name
