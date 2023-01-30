@@ -52,7 +52,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable dhcpcd
 
-echo -n "bye bye?"
+echo -n ">>> bye bye\n"
 
 # exit
 
