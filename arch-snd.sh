@@ -54,7 +54,7 @@ systemctl enable dhcpcd
 
 echo -n "bye bye?"
 
-exit
+# exit
 
 # umount -R /mnt
 # swapoff -a
