@@ -20,17 +20,20 @@
 # pacman -S linux-headers
 # pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
 
-pacman -S xorg
+# pacman -S xorg-xwayland
 pacman -S xf86-video-intel
+pacman -Syu xf86-input-wacom
 # pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
 
-pacman -S gnome-shell nautilus gnome-terminal  gnome-keyring gnome-system-monitor
+pacman -S gnome
+# pacman -S gnome-shell nautilus gnome-terminal  gnome-keyring gnome-system-monitor
 # pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet gnome-tweak-tool
 # pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish
 # pacman -S usbutils
 
 pacman -S papirus-icon-theme gnome-theme-extra
-pacman -Syu xf86-input-wacom
+gsettings set org.gnome.desktop.interface icon-theme papirus-icon-theme
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 
 pacman -S networkmanager
 systemctl enable NetworkManager
@@ -55,8 +58,6 @@ pacman -S openssh
 pacman -S gdm
 systemctl enable gdm
 systemctl start gdm
-
-gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 
 echo "are we still alive?"
 
