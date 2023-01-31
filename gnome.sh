@@ -70,7 +70,7 @@ echo "are we still alive?"
 # localectl set-x11-keymap es
 # nano /etc/locale.gen uncomment es_AR.UTF-8. Comment out any others, unless of course you need them to be able to read.
 
-Then run: sudo locale-gen
+# Then run: sudo locale-gen
 # localectl bluez bluez-utils
 
 # pacman -S go
