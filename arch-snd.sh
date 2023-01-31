@@ -58,8 +58,6 @@ systemctl enable dhcpcd
 echo -n ">>> bye bye\n"
 
 # exit
-
 # umount -R /mnt
 # swapoff -a
-
 # reboot
