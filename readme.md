@@ -64,13 +64,6 @@ cd install-arch
 source arch-fst.sh
 ```
 
-deprecated commands
-```
-systemctl enable iwd
-timedatectl set-ntp yes
-timedatectl set-timezone America/Argentina/Buenos_Aires
-```
-
 Run second script
 ```
 cd /tmp
