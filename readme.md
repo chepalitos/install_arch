@@ -55,7 +55,7 @@ mkfs.ext4 /dev/sdXY
 Install git and clone the repo
 ```
 pacman -Sy git
-git clone https://github.com/palitoschinos/install-arch.git
+git clone https://github.com/chepalitos/install-arch.git
 ```
 
 Run first script
@@ -68,7 +68,7 @@ Run second script
 ```
 cd /tmp
 pacman -S git
-git clone https://github.com/palitoschinos/instalarch
+git clone https://github.com/chepalitos/install-arch.git
 cd instalarch
 source arch-snd.sh
 ```
