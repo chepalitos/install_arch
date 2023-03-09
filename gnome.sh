@@ -17,8 +17,8 @@
 # pacman -Syu  # If a new kernel becomes available and is now installed, reboot, before proceeding.
 
 # Now that you have an updated system, do:
-# pacman -S linux-headers
-# pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
+pacman -S linux-headers
+pacman -S dkms  # This will automatically rebuild your kernel modules as new upstream kernels are released.
 
 # pacman -S xorg-xwayland
 pacman -S xf86-video-intel
