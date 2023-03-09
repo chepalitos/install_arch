@@ -8,4 +8,5 @@ DocPath=/usr/lib/R/doc/html/index.html
 StartupNotify=true
 Terminal=true
 Type=Application
-Categories=Math;Science;Education
+Categories=Math;Science;
+NoDisplay=true
