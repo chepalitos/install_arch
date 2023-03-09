@@ -26,7 +26,7 @@ pacman -Syu xf86-input-wacom
 # pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
 
 # pacman -S gnome
-pacman -S gnome-shell nautilus gnome-terminal gnome-system-monitor gnome-text-editor gnome-calculator evince totem epiphany
+pacman -S gnome-shell nautilus gnome-terminal gnome-system-monitor gnome-text-editor gnome-calculator evince totem epiphany tmux openssh
 # pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet gnome-tweak-tool
 # pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish gnome-keyring
 # pacman -S usbutils
@@ -34,8 +34,6 @@ pacman -S gnome-shell nautilus gnome-terminal gnome-system-monitor gnome-text-ed
 pacman -S networkmanager
 systemctl enable NetworkManager
 systemctl start NetworkManager
-
-pacman -S openssh
 
 #systemctl stop dhcpcd
 #systemctl disable dhcpcd
@@ -57,11 +55,10 @@ systemctl start gdm
 
 echo "are we still alive?"
 
-pacman -S papirus-icon-theme
+# pacman -S papirus-icon-theme
 # pacman -S gnome-theme-extra
-gsettings set org.gnome.desktop.interface icon-theme Papirus
+# gsettings set org.gnome.desktop.interface icon-theme Papirus
 # gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
-
 
 # ctrl + alt + f3
 # login as root
