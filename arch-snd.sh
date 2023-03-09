@@ -29,10 +29,6 @@ sed -i 's/# %sudo ALL=(ALL) ALL/%sudo ALL=(ALL) ALL/' /etc/sudoers
 echo -n ">>> Ingrese la contraseña para del usuario: "
 passwd $usr_name
 
-echo "LANG=es_AR.UTF-8" > /etc/locale.conf
-echo "KEYMAP=es" > /etc/vconsole.conf
-locale-gen
-
 echo $host_name > /etc/hostname
 echo -e "127.0.0.1\tlocalhost" > /etc/hosts
 echo -e "::1\t\tlocalhost" >> /etc/hosts
@@ -41,6 +37,9 @@ cat /etc/hosts
 
 sed -i 's/#es_AR ISO-8859-1/es_AR ISO-8859-1/' /etc/locale.gen
 # sed -i 's/#es_AR.UTF-8 UTF-8/es_AR.UTF-8 UTF-8/' /etc/locale.gen
+
+echo "LANG=es_AR.UTF-8" > /etc/locale.conf
+echo "KEYMAP=es" > /etc/vconsole.conf
 locale-gen
 
 mkinitcpio -p linux
