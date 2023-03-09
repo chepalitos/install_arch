@@ -39,7 +39,7 @@ echo -e "127.0.1.1\t$host_name.$usr_name $host_name" >> /etc/hosts
 cat /etc/hosts
 
 sed -i 's/#es_AR ISO-8859-1/es_AR ISO-8859-1/' /etc/locale.gen
-sed -i 's/#es_AR.UTF-8 UTF-8/es_AR.UTF-8 UTF-8/' /etc/locale.gen
+# sed -i 's/#es_AR.UTF-8 UTF-8/es_AR.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 
 mkinitcpio -p linux
