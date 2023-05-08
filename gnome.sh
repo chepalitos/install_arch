@@ -29,7 +29,7 @@ pacman -Syu xf86-input-wacom
 pacman -S gnome-shell nautilus gnome-terminal gnome-system-monitor gnome-text-editor gnome-calculator evince totem epiphany tmux openssh
 # pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet gnome-tweak-tool
 # pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish gnome-keyring
-# pacman -S usbutils
+# pacman -S usbutils tcpdump
 
 pacman -S networkmanager
 systemctl enable NetworkManager
