@@ -30,12 +30,16 @@ mkdir /mnt/boot
 # mount /dev/sda$boot_number /mnt/boot
 mount /dev/nvme0n1p$boot_number /mnt/boot
 
-# echo -n ">>> Ingrese el numero de la unidad donde se montara /efi: "
-# read -s efi_number
-# echo $efi_number
+echo -n ">>> Ingrese el numero de la unidad donde se montara /efi: "
+read -s efi_number
+echo $efi_number
 # mkfs.fat -F32 /dev/sda$efi_number
-# mkdir /mnt/efi
+mkfs.fat -F32 /dev/nvme0n1p$efi_number
+
+mkdir /mnt/efi
+mount dev/nvme0n1p$efi_number /mnt/efi
 # mount /dev/sda$efi_number /mnt/efi
+mount dev/nvme0n1p$efi_number /mnt/boot/efi
 # mount /dev/sda$efi_number /mnt/boot/efi
 
 echo -n ">>> Ingrese el numero de la unidad donde se montara /home: "
@@ -54,7 +58,7 @@ mount /dev/nvme0n1p$home_number /mnt/home
 echo -n ">>>> Instalando archlinux-heyring\n"
 # pacstrap /mnt base
 # pacstrap /mnt base linux-firmware linux
-pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel dhcpcd
+pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel vim
 # linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
 
 genfstab -U /mnt >> /mnt/etc/fstab
