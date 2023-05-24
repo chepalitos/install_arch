@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Assign the filename
 filename="Sales.txt"
 

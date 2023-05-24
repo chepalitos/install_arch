@@ -56,8 +56,8 @@ systemctl start gdm
 echo "are we still alive?"
 
 # pacman -S papirus-icon-theme
-# pacman -S gnome-theme-extra
 # gsettings set org.gnome.desktop.interface icon-theme Papirus
+# pacman -S gnome-theme-extra
 # gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 
 # ctrl + alt + f3
