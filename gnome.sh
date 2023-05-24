@@ -57,7 +57,8 @@ echo "are we still alive?"
 
 # pacman -S papirus-icon-theme
 # gsettings set org.gnome.desktop.interface icon-theme Papirus
-# pacman -S gnome-theme-extra
+
+# pacman -S gnome-themes-extra
 # gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 
 # ctrl + alt + f3
