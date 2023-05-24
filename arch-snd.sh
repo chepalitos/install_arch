@@ -32,7 +32,8 @@ echo -e "127.0.1.1\t$host_name.$usr_name $host_name" >> /etc/hosts
 cat /etc/hosts
 
 # useradd -m -G storage,power,wheel -s /bin/bash $usr_name
-useradd --create-home --groups wheel $usr_name
+#useradd --create-home --groups wheel $usr_name
+useradd -m -g users --groups wheel -a /bin/bash $usr_name
 
 sed -i 's/# %wheel ALL=(ALL=ALL) ALL/%wheel ALL=(ALL=ALL) ALL/' /etc/sudoers
 sed -i 's/# %sudo ALL=(ALL) ALL/%sudo ALL=(ALL) ALL/' /etc/sudoers

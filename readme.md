@@ -5,6 +5,9 @@ Something like that
 - https://wiki.archlinux.org/title/Installation_guide
 - https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration
 
+## video tutorial
+- https://www.youtube.com/watch?v=_ZYuzjH-ZIA
+
 ## First steps
 Load es kayboard
 ```
