@@ -30,7 +30,6 @@ echo $efi_number
 
 mkfs.fat -F32 /dev/nvme0n1p$efi_number
 mkdir /mnt/efi
-mount dev/nvme0n1p$efi_number /mnt/efi
 mount dev/nvme0n1p$efi_number /mnt/boot/efi
 
 echo -n ">>> Ingrese el numero de la unidad donde se montara /home: "
