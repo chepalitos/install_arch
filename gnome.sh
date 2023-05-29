@@ -83,3 +83,6 @@ echo "are we still alive?"
 # yay -S pamac-aur-git --noconfirm
 
 ## somre other stuff https://github.com/hannenz/duplicate
+
+# https://aur.archlinux.org/packages/gedit-duplicate-line
+
