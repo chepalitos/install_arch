@@ -106,3 +106,10 @@ Change theme:
 sudo pacman -S gnome-themes-extra
 sudo gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 ```
+
+Pipewire for screencast:
+```
+sudo pacman -S gst-plugin-pipewire
+sudo pacman -S gst-plugins-good
+```
+
