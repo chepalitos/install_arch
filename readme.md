@@ -113,3 +113,8 @@ sudo pacman -S gst-plugin-pipewire
 sudo pacman -S gst-plugins-good
 ```
 
+```
+In GNOME 42 running GDM login manager, localectl told me VC Keymap: n/a.
+Running sudo localectl set-x11-keymap dk
+```
+
