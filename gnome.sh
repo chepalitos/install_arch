@@ -85,3 +85,4 @@ echo "are we still alive?"
 ## somre other stuff https://github.com/hannenz/duplicate
 
 # not xdg-desktop-portal-gnome is needed… it needs xdg-desktop-portal
+# localectl set-x11-keymap es
