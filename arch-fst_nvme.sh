@@ -18,7 +18,8 @@ echo -n "Ingrese el numero de la unidad donde se montara /boot: "
 read -s boot_number
 echo $boot_number
 
-mkfs.fat -F32 /dev/nvme0n1p$boot_number
+#mkfs.fat -F32 /dev/nvme0n1p$boot_number
+mkfs.ext4 /dev/nvme0n1p$boot_number
 mkdir /mnt/boot
 mount /dev/nvme0n1p$boot_number /mnt/boot
 
