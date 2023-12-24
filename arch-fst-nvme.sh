@@ -42,8 +42,8 @@ mount /dev/nvme0n1p$home_number /mnt/home
 # pacman-key --refresh-keys
 
 echo -n ">>>> Instalando paquetes base\n"
-pacstrap /mnt base
-#pacstrap /mnt base linux-firmware linux sudo vim
+#pacstrap /mnt base
+pacstrap /mnt base linux-firmware linux
 #pacstrap /mnt base linux-firmware linux efibootmgr grub-efi-x86_64 base-devel vim
 #pacstrap /mnt base linux-firmware linux efibootmgr grub-efi-x86_64 base-devel vim linux-headers net-tools dnsutils iputils dhcpcd
 
