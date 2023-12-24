@@ -55,19 +55,19 @@ mkfs.ext4 /dev/sdXY
 ```
 ## Begin installation
 
-Install git and clone the repo
+### Install git and clone the repo
 ```
 pacman -Sy git
 git clone https://github.com/chepalitos/install-arch.git
 ```
 
-Run first script
+### Run first script
 ```
 cd install-arch
 source arch-fst.sh
 ```
 
-Run second script
+### Run second script
 ```
 cd /tmp
 pacman -S git
@@ -76,14 +76,14 @@ cd instalarch
 source arch-snd.sh
 ```
 
-Reboot:
+### Reboot:
 ```
 umount -R /mnt
 swapoff -a
 reboot
 ```
 
-Run third script
+### Run third script
 ```
 cd /tmp
 pacman -S git

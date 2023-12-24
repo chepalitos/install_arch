@@ -44,13 +44,13 @@ passwd $usr_name
 
 mkinitcpio -p linux
 
-# echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
-# read -s id_name
-# echo $id_name
+#echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
+#read -s id_name
+#echo $id_name
 
-# pacman -S grub
-#grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+#pacman -S grub
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+#grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
