@@ -5,7 +5,7 @@ lsblk
 
 echo -n ">>> Ingrese el numero de la unidad donde se montara /swap: "
 read -s swap_number
-echo $boot_number
+echo $swap_number
 mkswap /dev/nvme0n1p$swap_number
 swapon /dev/nvme0n1p$swap_number
 
