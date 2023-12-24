@@ -8,8 +8,8 @@ sed -i 's/#es_AR.UTF-8 UTF-8/es_AR.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 
 echo "LANG=es_AR.UTF-8" > /etc/locale.conf
-#echo "KEYMAP=es" > /etc/vconsole.conf
-#locale-gen
+echo "KEYMAP=es" > /etc/vconsole.conf
+locale-gen
 
 echo -n ">>> Ingrese el nombre del host: "
 read -s host_name
