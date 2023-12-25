@@ -43,7 +43,7 @@ mount /dev/nvme0n1p$home_number /mnt/home
 
 echo -n ">>>> Instalando paquetes base\n"
 #pacstrap /mnt base
-pacstrap /mnt base linux-firmware linux linux-headers base-devel dhcpcd iputils vim
+pacstrap /mnt base linux-firmware linux linux-headers base-devel dhcpcd iputils dnsutils vim
 #pacstrap /mnt base linux-firmware linux efibootmgr grub-efi-x86_64 base-devel vim
 #pacstrap /mnt base linux-firmware linux efibootmgr grub-efi-x86_64 base-devel vim linux-headers net-tools dnsutils iputils dhcpcd
 

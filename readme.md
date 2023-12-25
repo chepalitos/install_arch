@@ -83,13 +83,21 @@ swapoff -a
 reboot
 ```
 
+## If you don't have network connectivity in your Arch system, run:
+```
+systemctl enable dhcpcd
+systemctl start dhcpcd <interface-name>
+ip link set <interface-name> up
+```
+
 ### Run third script
+login as root
 ```
 cd /tmp
 pacman -S git
 git clone https://github.com/palitoschinos/instalarch
 cd install-arch
-source <enviroment-name>.sh
+source gnome.sh
 ```
 
 ## Icons
