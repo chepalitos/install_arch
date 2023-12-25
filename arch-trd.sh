@@ -10,6 +10,9 @@ passwd $usr_name
 #sed -i 's/# %sudo ALL=(ALL:ALL) ALL/sudo ALL=(ALL:ALL) ALL/' /etc/sudoers
 sed -i 's/root ALL=(ALL:ALL) ALL/root ALL=(ALL:ALL) ALL\n$usr_name ALL=(ALL) ALL/' /etc/sudoers
 
+#usermod -a -G sudo <user-name>
+#usermod -a -G wheel <user-name>
+
 #mkinitcpio -p
 
 #echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
