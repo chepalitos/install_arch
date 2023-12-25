@@ -56,8 +56,8 @@ echo "are we still alive?"
 # Then run: sudo locale-gen
 # localectl bluez bluez-utils
 
-# not xdg-desktop-portal-gnome is needed… it needs xdg-desktop-portal
 # sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
+
 # localectl set-x11-keymap es
 # gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
 # gsettings get org.gnome.desktop.input-sources sources
