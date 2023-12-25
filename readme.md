@@ -86,7 +86,7 @@ reboot
 ## If you don't have network connectivity in your Arch system, run:
 ```
 systemctl enable dhcpcd
-systemctl start dhcpcd <interface-name>
+systemctl start dhcpcd
 ip link set <interface-name> up
 ```
 
