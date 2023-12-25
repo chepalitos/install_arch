@@ -43,21 +43,9 @@ echo "are we still alive?"
 # pacman -S gnome-themes-extra
 # gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 # gsettings get org.gnome.desktop.interface gtk-theme
-
-# ctrl + alt + f3
-# login as root
-# nano /etc/sudoers
-# nomre_del_usuario ALL=(ALL) ALL
-
-# localectl set-locale LANG="es_AR.UTF-8"
-# localectl set-x11-keymap es
-# nano /etc/locale.gen uncomment es_AR.UTF-8. Comment out any others, unless of course you need them to be able to read.
-
-# Then run: sudo locale-gen
-# localectl bluez bluez-utils
-
 # sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
 
 # localectl set-x11-keymap es
 # gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
+# gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
 # gsettings get org.gnome.desktop.input-sources sources
