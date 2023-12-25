@@ -9,9 +9,9 @@ pacman -S xf86-video-intel
 # pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
 
 # pacman -S gnome
-pacman -S gnome-shell nautilus gnome-terminal gnome-system-monitor gnome-text-editor gnome-calculator gnome-screenshot gnome-control-center evince totem epiphany tmux openssh networkmanager
-# pacman -S genome-shell-extensions gnome-software totem evince epiphany gnome-screenshot gedit eye gnome-control-center xdg-user-dirs network-manager-applet gnome-tweak-tool
-# pacman -S latexila gtg gitg file-roller go recapp anjunta bluefish gnome-keyring
+pacman -S gnome-shell nautilus gnome-console gnome-system-monitor gnome-text-editor gnome-calculator gnome-screenshot gnome-control-center evince totem firefox tmux openssh networkmanager
+# pacman -S genome-shell-extensions epiphany gedit eye xdg-user-dirs network-manager-applet gnome-tweak-tool gnome-terminal
+# pacman -S gnome-keyring
 # pacman -S usbutils tcpdump
 
 systemctl enable NetworkManager

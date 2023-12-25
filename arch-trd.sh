@@ -6,9 +6,9 @@ useradd --create-home --groups wheel $usr_name
 echo -n ">>> Ingrese la contraseña para del usuario: "
 passwd $usr_name
 
-sed -i 's/# %wheel ALL=(ALL=ALL) ALL/%wheel ALL=(ALL=ALL) ALL/' /etc/sudoers
-sed -i 's/# %sudo ALL=(ALL) ALL/%sudo ALL=(ALL) ALL/' /etc/sudoers
-#sed -i 's/root ALL=(ALL) ALL/root ALL=(ALL) ALL\n$usr_name ALL=(ALL) ALL/' /etc/sudoers
+#sed -i 's/# %wheel ALL=(ALL:ALL) ALL/wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
+#sed -i 's/# %sudo ALL=(ALL:ALL) ALL/sudo ALL=(ALL:ALL) ALL/' /etc/sudoers
+sed -i 's/root ALL=(ALL:ALL) ALL/root ALL=(ALL:ALL) ALL\n$usr_name ALL=(ALL) ALL/' /etc/sudoers
 
 #mkinitcpio -p
 
