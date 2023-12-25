@@ -1,19 +1,15 @@
-echo -n ">>> Ingrese el nombre del usuario: "
-read -s usr_name
-echo $usr_name
-useradd --create-home --groups wheel $usr_name
-
-#useradd -m -G storage,power,wheel -s /bin/bash $usr_name
-#useradd -m -G users --groups wheel -a /bin/bash $usr_name
-
-echo -n ">>> Ingrese la contraseña para del usuario: "
-passwd $usr_name
+#echo -n ">>> Ingrese el nombre del usuario: "
+#read -s usr_name
+#echo $usr_name
+#useradd --create-home --groups wheel $usr_name
+#echo -n ">>> Ingrese la contraseña para del usuario: "
+#passwd $usr_name
 
 sed -i 's/# %wheel ALL=(ALL=ALL) ALL/%wheel ALL=(ALL=ALL) ALL/' /etc/sudoers
 sed -i 's/# %sudo ALL=(ALL) ALL/%sudo ALL=(ALL) ALL/' /etc/sudoers
 # sed -i 's/root ALL=(ALL) ALL/root ALL=(ALL) ALL\n$usr_name ALL=(ALL) ALL/' /etc/sudoers
 
-mkinitcpio -p
+#mkinitcpio -p
 
 #echo -n "Ingrese el nombre de la etiqueta de la instalacion en para el bootloader: "
 #read -s id_name
