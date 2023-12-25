@@ -11,4 +11,3 @@ When pressing this key combination the plugin will duplicate the current line.
 If there is a selection and the selection spans several lines, then all selected lines are duplicated.
 If the selection is within a single line, then the selected text will be duplicated.
 
-- https://github.com/hannenz/duplicate
