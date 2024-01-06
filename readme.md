@@ -115,9 +115,8 @@ sudo pacman -S gnome-themes-extra
 sudo gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 ```
 
-Pipewire for screencast:
+Pipewire for screencast record:
 ```
-sudo pacman -S gst-plugin-pipewire
-sudo pacman -S gst-plugins-good
+sudo pacman -S gst-plugin-pipewire gst-plugins-good
 ```
 

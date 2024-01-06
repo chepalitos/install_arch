@@ -26,6 +26,7 @@ systemctl start bluetooth
 # First off, I’ll install pulseaudio and the Bluetooth extension.
 #sudo pacman -S pulseaudio
 #sudo pacman -S pulseaudio-bluetooth
+
 # Start up pulseaudio:
 #sudo systemctl pulseaudio start
 # If you want it to start up automatically:
@@ -46,6 +47,7 @@ echo "are we still alive?"
 # sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
 
 # localectl set-x11-keymap es
+# localectl set-x11-keymap latam
 # gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
 # gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
 # gsettings get org.gnome.desktop.input-sources sources
