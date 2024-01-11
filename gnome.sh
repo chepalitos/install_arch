@@ -4,7 +4,7 @@
 pacman -S dkms
 
 # pacman -S xorg-xwayland
-pacman -S xf86-video-intel
+# pacman -S xf86-video-intel
 # pacman -Syu xf86-input-wacom
 # pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
 
@@ -20,6 +20,7 @@ systemctl start NetworkManager
 #systemctl stop dhcpcd
 #systemctl disable dhcpcd
 
+# sudo pacman -S bluez bluez-utils
 systemctl enable bluetooth
 systemctl start bluetooth
 
