@@ -25,8 +25,8 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub_
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
-systemctl stop dhcpcd
-systemctl disable dhcpcd
+#systemctl stop dhcpcd
+#systemctl disable dhcpcd
 
 echo -n ">>> bye bye\n"
 

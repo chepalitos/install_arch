@@ -67,13 +67,14 @@ cd install-arch
 source arch-fst.sh
 ```
 
-### Run second script
+### Run second and third script
 ```
 cd /tmp
 pacman -S git
 git clone https://github.com/chepalitos/install-arch.git
 cd instalarch
 source arch-snd.sh
+source arch-trd.sh
 ```
 
 ### Reboot:
