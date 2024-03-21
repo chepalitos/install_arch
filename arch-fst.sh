@@ -44,7 +44,7 @@ mount /dev/sda$home_number /mnt/home
 echo -n ">>>> Instalando archlinux-heyring\n"
 # pacstrap /mnt base
 # pacstrap /mnt base linux-firmware linux
-pacstrap /mnt base linux linux-firmware efibootmgr grub-efi-x86_64 base-devel vim
+pacstrap /mnt base linux-firmware linux linux-headers base-devel
 # linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
 
 genfstab -U /mnt >> /mnt/etc/fstab

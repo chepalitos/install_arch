@@ -19,12 +19,12 @@ sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 #read -s id_name
 #echo $id_name
 
-pacman -S grub efibootmgr
+#pacman -S grub efibootmgr
+pacman -S efibootmgr grub-efi-x86_64
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub_uefi
-#grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-
 grub-mkconfig -o /boot/grub/grub.cfg
 
+pacman -S dhcpcd iputils dnsutils vim
 #systemctl stop dhcpcd
 #systemctl disable dhcpcd
 
