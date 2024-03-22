@@ -107,13 +107,13 @@ Copy files in `icon` folder to `/home/fschneeberger/.local/share/applications/`
 Install icons:
 ```
 sudo pacman -S papirus-icon-theme
-sudo gsettings set org.gnome.desktop.interface icon-theme Papirus
+gsettings set org.gnome.desktop.interface icon-theme Papirus
 ```
 
 Change theme:
 ```
 sudo pacman -S gnome-themes-extra
-sudo gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
 ```
 
 Pipewire for screencast record:

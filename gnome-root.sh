@@ -42,10 +42,12 @@ echo "are we still alive?"
 # pacman -S papirus-icon-theme
 # gsettings set org.gnome.desktop.interface icon-theme Papirus
 
-# pacman -S gnome-themes-extra
-# gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
-# gsettings get org.gnome.desktop.interface gtk-theme
+# sudo pacman -S gnome-themes-extra
 # sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
+# gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/Nautilus
+# gsettings get org.gnome.desktop.interface gtk-theme
+# gsettings set org.gnome.desktop.interface gtk-theme prefer-dark
+
 
 # localectl set-x11-keymap es
 # localectl set-x11-keymap latam
