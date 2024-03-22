@@ -1,12 +1,18 @@
-# Assign the filename
+# How to sed
+
+Assign the filename
+```
 filename="Sales.txt"
-
-# Take the search string
+```
+Take the search string
+```
 read -p "Enter the search string: " search
-
-# Take the replace string
+```
+Take the replace string
+```
 read -p "Enter the replace string: " replace
-
-if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/" $filename
-fi
+```
+Run script
+```
+if [[ $search != "" && $replace != "" ]]; then sed -i "s/$search/$replace/" $filename fi
+```
