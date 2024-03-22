@@ -54,6 +54,7 @@ To format /boot partition
 mkfs.ext4 /dev/sdXY
 ```
 ## Begin installation
+This method requiere separated partotions for `/boot` boot and `/efi`.
 
 ### Install git and clone the repo
 ```
@@ -98,11 +99,11 @@ cd /tmp
 pacman -S git
 git clone https://github.com/palitoschinos/instalarch
 cd install-arch
-source gnome.sh
+source gnome-root.sh
 ```
 
 ## Icons
-Copy files in `icon` folder to `/home/fschneeberger/.local/share/applications/`
+Copy files in `icon` folder to `/home/<username>/.local/share/applications/` to hide some icons from the desk.
 
 Install icons:
 ```
