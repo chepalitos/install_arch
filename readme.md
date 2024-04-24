@@ -122,3 +122,7 @@ Pipewire for screencast record:
 sudo pacman -S gst-plugin-pipewire gst-plugins-good
 ```
 
+Video codecs for tothem
+```
+sudo pacman -S gst-libav libmpeg2
+```
