@@ -114,7 +114,11 @@ gsettings set org.gnome.desktop.interface icon-theme Papirus
 Change theme:
 ```
 sudo pacman -S gnome-themes-extra
-gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+```
+or
+```
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 ```
 
 Pipewire for screencast record:
