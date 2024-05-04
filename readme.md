@@ -96,8 +96,6 @@ ip link set <interface-name> up
 login as root
 ```
 cd /tmp
-pacman -S git
-git clone https://github.com/palitoschinos/instalarch
 cd install-arch
 source gnome-root.sh
 ```
@@ -120,6 +118,19 @@ or
 ```
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 ```
+To query the current GTK theme:
+```
+gsettings get org.gnome.desktop.interface gtk-theme
+GtkSettings:gtk-application-prefer-dark-theme
+AdwStyleManager:color-scheme darkinstead.
+```
+
+Links:
+
+- https://wiki.archlinux.org/title/GTK#Dark_theme_variant
+- https://wiki.archlinux.org/title/Dark_mode_switching
+- https://wiki.archlinux.org/title/GTK#Dark_theme_variant
+- https://wiki.archlinux.org/title/GTK
 
 Pipewire for screencast record:
 ```
