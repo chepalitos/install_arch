@@ -118,11 +118,10 @@ or
 ```
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 ```
+
 To query the current GTK theme:
 ```
 gsettings get org.gnome.desktop.interface gtk-theme
-GtkSettings:gtk-application-prefer-dark-theme
-AdwStyleManager:color-scheme darkinstead.
 ```
 
 Links:
