@@ -112,6 +112,7 @@ gsettings set org.gnome.desktop.interface icon-theme Papirus
 Change theme:
 ```
 sudo pacman -S gnome-themes-extra
+sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
 ```
 or
@@ -122,6 +123,15 @@ gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 To query the current GTK theme:
 ```
 gsettings get org.gnome.desktop.interface gtk-theme
+```
+
+Properly set keyboard:
+```
+localectl set-x11-keymap es
+localectl set-x11-keymap latam
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
+gsettings get org.gnome.desktop.input-sources sources
 ```
 
 Links:
