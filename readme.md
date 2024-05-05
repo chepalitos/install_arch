@@ -150,3 +150,8 @@ Video codecs for tothem
 ```
 sudo pacman -S gst-libav libmpeg2
 ```
+
+Gnome-calendar path:
+```
+home/userpath/.local/share/evolution/calnder/system/calendar.ics
+```
