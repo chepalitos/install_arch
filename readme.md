@@ -130,6 +130,9 @@ Properly set keyboard:
 localectl set-x11-keymap es
 localectl set-x11-keymap latam
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
+```
+or
+```
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
 gsettings get org.gnome.desktop.input-sources sources
 ```
