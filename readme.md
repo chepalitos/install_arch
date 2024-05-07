@@ -158,3 +158,6 @@ Gnome-calendar path:
 ```
 home/userpath/.local/share/evolution/calnder/system/calendar.ics
 ```
+
+Dual boot
+- https://wiki.archlinux.org/title/GRUB#Dual_booting_with_GNU.2FLinux
