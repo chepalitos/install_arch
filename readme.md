@@ -48,6 +48,10 @@ To format /efi partition
 ```
 mkfs.fat -F32 /dev/sdXX
 ```
+or
+```
+mkfs.fat -F32 /dev/nvme0n1pXX
+```
 
 To format /boot partition
 ```

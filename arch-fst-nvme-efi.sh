@@ -22,10 +22,12 @@ mount /dev/nvme0n1p$mnt_number /mnt
 # mkdir /mnt/boot
 # mount /dev/nvme0n1p$boot_number /mnt/boot
 
-echo -n ">>> Ingrese el numero de la unidad donde se montara /efi: "
+echo -n ">>> Ingrese el numero de la unidad donde se montara /boot y /boot/efi: "
 read -s efi_number
 echo $efi_number
 mkfs.fat -F32 /dev/nvme0n1p$efi_number
+mkdir /mnt/boot
+mount /dev/nvme0n1p$efi_number /mnt/boot
 mkdir /mnt/boot/efi
 mount /dev/nvme0n1p$efi_number /mnt/boot/efi
 
