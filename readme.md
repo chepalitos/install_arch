@@ -48,6 +48,10 @@ To format /efi partition
 ```
 mkfs.fat -F32 /dev/sdXX
 ```
+or
+```
+mkfs.fat -F32 /dev/nvme0n1pXX
+```
 
 To format /boot partition
 ```
@@ -96,8 +100,6 @@ ip link set <interface-name> up
 login as root
 ```
 cd /tmp
-pacman -S git
-git clone https://github.com/palitoschinos/instalarch
 cd install-arch
 source gnome-root.sh
 ```
@@ -114,12 +116,37 @@ gsettings set org.gnome.desktop.interface icon-theme Papirus
 Change theme:
 ```
 sudo pacman -S gnome-themes-extra
+sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
 ```
 or
 ```
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 ```
+
+To query the current GTK theme:
+```
+gsettings get org.gnome.desktop.interface gtk-theme
+```
+
+Properly set keyboard:
+```
+localectl set-x11-keymap es
+localectl set-x11-keymap latam
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
+```
+or
+```
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
+gsettings get org.gnome.desktop.input-sources sources
+```
+
+Links:
+
+- https://wiki.archlinux.org/title/GTK#Dark_theme_variant
+- https://wiki.archlinux.org/title/Dark_mode_switching
+- https://wiki.archlinux.org/title/GTK#Dark_theme_variant
+- https://wiki.archlinux.org/title/GTK
 
 Pipewire for screencast record:
 ```
@@ -136,3 +163,11 @@ Sysadmin packages
 bind
 ssh server
 ```
+
+Gnome-calendar path:
+```
+home/userpath/.local/share/evolution/calnder/system/calendar.ics
+```
+
+Dual boot
+- https://wiki.archlinux.org/title/GRUB#Dual_booting_with_GNU.2FLinux

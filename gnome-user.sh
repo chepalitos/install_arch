@@ -9,8 +9,7 @@ sudo pacman -S dkms
 # pacman -S xorg-server xorg-server-utils xorg-xinit xorg-apps xorg-drivers
 
 # pacman -S gnome
-sudo pacman -S gnome-shell nautilus gnome-console gnome-system-monitor gnome-text-editor gnome-calculator gnome-screenshot gnome-control-center evince totem firefox tmux openssh networkmanager
-# pacman -S genome-shell-extensions epiphany gedit eye xdg-user-dirs network-manager-applet gnome-tweak-tool gnome-terminal
+sudo pacman -S gnome-shell nautilus gnome-console gnome-system-monitor gnome-text-editor gnome-calculator gnome-screenshot gnome-control-center evince totem firefox tmux openssh networkmanager eog
 # pacman -S gnome-keyring
 # pacman -S usbutils tcpdump
 
@@ -38,17 +37,3 @@ sudo systemctl enable gdm
 sudo systemctl start gdm
 
 echo "are we still alive?"
-
-# pacman -S papirus-icon-theme
-# gsettings set org.gnome.desktop.interface icon-theme Papirus
-
-# pacman -S gnome-themes-extra
-# gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/
-# gsettings get org.gnome.desktop.interface gtk-theme
-# sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
-
-# localectl set-x11-keymap es
-# localectl set-x11-keymap latam
-# gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
-# gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
-# gsettings get org.gnome.desktop.input-sources sources

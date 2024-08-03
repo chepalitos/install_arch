@@ -38,19 +38,3 @@ systemctl enable gdm
 systemctl start gdm
 
 echo "are we still alive?"
-
-# pacman -S papirus-icon-theme
-# gsettings set org.gnome.desktop.interface icon-theme Papirus
-
-# sudo pacman -S gnome-themes-extra
-# sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
-# gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark/Nautilus
-# gsettings get org.gnome.desktop.interface gtk-theme
-# gsettings set org.gnome.desktop.interface gtk-theme prefer-dark
-
-
-# localectl set-x11-keymap es
-# localectl set-x11-keymap latam
-# gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
-# gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
-# gsettings get org.gnome.desktop.input-sources sources
