@@ -130,3 +130,9 @@ Video codecs for tothem
 ```
 sudo pacman -S gst-libav libmpeg2
 ```
+
+Sysadmin packages
+```
+bind
+ssh server
+```
