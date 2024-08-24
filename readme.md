@@ -161,7 +161,6 @@ sudo pacman -S gst-libav libmpeg2
 Sysadmin packages
 ```
 bind
-ssh server
 ```
 
 Gnome-calendar path:
