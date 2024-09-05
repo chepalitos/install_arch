@@ -132,12 +132,13 @@ gsettings get org.gnome.desktop.interface gtk-theme
 Properly set keyboard:
 ```
 localectl set-x11-keymap es
-localectl set-x11-keymap latam
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
+
+sudo localectl set-x11-keymap latam
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
 ```
-or
+verify:
 ```
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
 gsettings get org.gnome.desktop.input-sources sources
 ```
 
