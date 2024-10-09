@@ -36,6 +36,7 @@ mkdir /mnt/home
 mount /dev/nvme0n1p$home_number /mnt/home
 
 # echo -n "Instalando archlinux-heyring\n"
+
 # pacman -Syu
 # pacman -Sy archlinux-keyring #
 # pacman-key --refresh-keys
