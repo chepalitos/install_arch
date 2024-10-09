@@ -131,13 +131,14 @@ gsettings get org.gnome.desktop.interface gtk-theme
 
 Properly set keyboard:
 ```
-localectl set-x11-keymap es
-localectl set-x11-keymap latam
+sudo localectl set-x11-keymap latam
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'latam')]"
 ```
-or
 ```
+localectl set-x11-keymap es
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
+```
+```
 gsettings get org.gnome.desktop.input-sources sources
 ```
 
@@ -169,5 +170,21 @@ Gnome-calendar path:
 home/userpath/.local/share/evolution/calnder/system/calendar.ics
 ```
 
+ssh server
+```
+sudo pacman -S openssh
+sudo systemctl start sshd
+sudo systemctl enable sshd
+ssh-keygen
+ssh-keygen -R <server-ip>
+```
+
 Dual boot
 - https://wiki.archlinux.org/title/GRUB#Dual_booting_with_GNU.2FLinux
+
+os-prober will not be executed to detect other bootable partitions then
+edit `/etc/default/grub` add/uncomment:
+```
+GRUB_DISABLE_OS_PROBER=false
+```
+
