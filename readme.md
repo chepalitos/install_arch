@@ -188,3 +188,10 @@ edit `/etc/default/grub` add/uncomment:
 GRUB_DISABLE_OS_PROBER=false
 ```
 
+GDM auto-suspend (GNOME 3.28)
+
+GDM uses a separate dconf database to control power management.
+Disable auto-suspend (also run the command with ac replaced with battery to also disable it while running on battery):
+```
+sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep
+```
