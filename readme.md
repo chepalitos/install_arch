@@ -163,6 +163,7 @@ Sysadmin packages
 ```
 bind
 strace
+inetutils
 ```
 
 Gnome-calendar path:
