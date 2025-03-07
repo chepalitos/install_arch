@@ -164,6 +164,8 @@ sudo pacman -S gst-libav libmpeg2
 Sysadmin packages
 ```
 bind
+strace
+inetutils
 ```
 
 Gnome-calendar path:
@@ -193,5 +195,10 @@ To restore the default behaviour of these key bindings:
 ```
 gsettings reset org.gnome.mutter.keybindings toggle-tiled-left
 gsettings reset org.gnome.mutter.keybindings toggle-tiled-right
+```
 
+GDM uses a separate dconf database to control power management.
+Disable auto-suspend (also run the command with ac replaced with battery to also disable it while running on battery):
+```
+sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep
 ```
