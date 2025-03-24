@@ -116,8 +116,10 @@ gsettings set org.gnome.desktop.interface icon-theme Papirus
 Change theme:
 ```
 sudo pacman -S gnome-themes-extra
-sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+```
+```
+sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal
 ```
 or
 ```
@@ -189,7 +191,11 @@ edit `/etc/default/grub` add/uncomment:
 GRUB_DISABLE_OS_PROBER=false
 ```
 
-GDM auto-suspend (GNOME 3.28)
+To restore the default behaviour of these key bindings:
+```
+gsettings reset org.gnome.mutter.keybindings toggle-tiled-left
+gsettings reset org.gnome.mutter.keybindings toggle-tiled-right
+```
 
 GDM uses a separate dconf database to control power management.
 Disable auto-suspend (also run the command with ac replaced with battery to also disable it while running on battery):
