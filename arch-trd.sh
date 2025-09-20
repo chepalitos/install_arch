@@ -1,7 +1,9 @@
 echo -n ">>> Ingrese el nombre del usuario: "
 read -s usr_name
 echo $usr_name
-useradd --create-home --GROUPs wheel $usr_name
+# useradd --create-home --groups wheel $usr_name
+# useradd --create-home $usr_name
+# usermod -aG wheel $usr_name
 
 echo -n ">>> Ingrese la contraseña para del usuario: "
 passwd $usr_name
