@@ -31,7 +31,7 @@ pacman -S dhcpcd iputils dnsutils vim
 #systemctl stop dhcpcd
 #systemctl disable dhcpcd
 
-echo -n ">>> bye bye\n"
+echo -n ">>> bye bye\nType 'exit' to continue..."
 
 exit
 # umount -R /mnt
