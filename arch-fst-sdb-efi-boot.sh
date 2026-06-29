@@ -42,14 +42,15 @@ mount /dev/sda$home_number /mnt/home
 # pacman-key --refresh-keys
 
 echo -n ">>>> Instalando archlinux-heyring\n"
+
 # pacstrap /mnt base
 # pacstrap /mnt base linux-firmware linux
 pacstrap /mnt base linux-firmware linux linux-headers base-devel
 # linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
 
-genfstab -U /mnt >> /mnt/etc/fstab
+# genfstab -U /mnt >> /mnt/etc/fstab
 
-echo -n ">>> bye bye\n"
+# echo -n ">>> bye bye\n"
 
 arch-chroot /mnt
 #arch-chroot /mnt /bin/bash
