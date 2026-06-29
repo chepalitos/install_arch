@@ -50,7 +50,7 @@ pacman -Sy archlinux-keyring
 # pacstrap /mnt base
 # pacstrap /mnt base linux-firmware linux
 pacstrap /mnt base linux-firmware linux linux-headers base-devel
-# linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
+# pacstrap /mnt linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
 
 # genfstab -U /mnt >> /mnt/etc/fstab
 

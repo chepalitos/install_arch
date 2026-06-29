@@ -26,5 +26,3 @@ echo -e "127.0.0.1\tlocalhost" > /etc/hosts
 echo -e "::1\t\tlocalhost" >> /etc/hosts
 echo -e "127.0.1.1\t$host_name.$usr_name $host_name" >> /etc/hosts
 cat /etc/hosts
-
-

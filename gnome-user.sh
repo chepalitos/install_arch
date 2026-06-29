@@ -36,4 +36,4 @@ sudo pacman -S gdm
 sudo systemctl enable gdm
 sudo systemctl start gdm
 
-echo "are we still alive?"
+# echo "are we still alive?"
