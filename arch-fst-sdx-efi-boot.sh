@@ -41,7 +41,11 @@ mount /dev/sda$home_number /mnt/home
 # pacman -Sy archlinux-keyring #
 # pacman-key --refresh-keys
 
-echo -n ">>>> Instalando archlinux-heyring\n"
+# echo -n ">>>> Instalando archlinux-heyring\n"
+
+pacman-key --init
+pacman-key --populate archlinux
+pacman -Sy archlinux-keyring
 
 # pacstrap /mnt base
 # pacstrap /mnt base linux-firmware linux
