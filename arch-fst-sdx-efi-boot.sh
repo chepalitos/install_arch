@@ -35,13 +35,13 @@ echo $home_number
 mkdir /mnt/home
 mount /dev/sda$home_number /mnt/home
 
-# echo -n "Instalando archlinux-heyring\n"
+# Instalando archlinux-heyring
 
 # pacman -Syu
 # pacman -Sy archlinux-keyring #
 # pacman-key --refresh-keys
 
-# echo -n ">>>> Instalando archlinux-heyring\n"
+# Instalando archlinux-heyring
 
 pacman-key --init
 pacman-key --populate archlinux
