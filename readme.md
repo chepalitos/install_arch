@@ -60,6 +60,9 @@ mkfs.ext4 /dev/sdXY
 ## Begin installation
 This method requiere separated partotions for `/boot` boot and `/efi`.
 
+
+
+
 ### Install git and clone the repo
 ```
 pacman -Sy git

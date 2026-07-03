@@ -3,8 +3,13 @@ read -s usr_name
 echo $usr_name
 useradd --create-home --groups wheel $usr_name
 
+# sudo useradd -d /home/alex_old -s /bin/bash $usr_name
 # useradd --create-home $usr_name
 # usermod -aG wheel $usr_name
+
+# -d /home/alex_old: Tells the system, "This is this user's home directory." Because you didn't include -m, Linux will just look at the existing folder rather than trying to create a new one from scratch.
+# -s /bin/bash: Sets the default shell (highly recommended, otherwise it might default to /bin/sh which is less user-friendly).
+
 
 echo -n ">>> Ingrese la contraseña para del usuario: "
 passwd $usr_name
@@ -30,8 +35,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 pacman -S dhcpcd iputils dnsutils vim
 #systemctl stop dhcpcd
 #systemctl disable dhcpcd
-
-echo -n ">>> bye bye\nType 'exit' to continue..."
 
 exit
 # umount -R /mnt

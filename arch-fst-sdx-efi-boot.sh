@@ -56,5 +56,5 @@ pacstrap /mnt base linux-firmware linux linux-headers base-devel
 
 # echo -n ">>> bye bye\n"
 
-arch-chroot /mnt
+# arch-chroot /mnt
 #arch-chroot /mnt /bin/bash
