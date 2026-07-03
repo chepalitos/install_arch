@@ -2,8 +2,7 @@ echo -n ">>> Ingrese el nombre del usuario: "
 read -s usr_name
 echo $usr_name
 useradd --create-home --groups wheel $usr_name
-
-# sudo useradd -d /home/alex_old -s /bin/bash $usr_name
+# useradd -d /home/alex_old -s /bin/bash $usr_name
 # useradd --create-home $usr_name
 # usermod -aG wheel $usr_name
 

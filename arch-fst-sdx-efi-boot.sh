@@ -52,7 +52,7 @@ pacman -Sy archlinux-keyring
 pacstrap /mnt base linux-firmware linux linux-headers base-devel
 # pacstrap /mnt linux-headers net-tools vim lvm2 nano iwd man-pages dialog dnsutils iputils wpa_supplicant dhcpcd
 
-# genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 
 # echo -n ">>> bye bye\n"
 
