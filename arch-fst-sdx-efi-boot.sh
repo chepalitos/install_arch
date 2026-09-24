@@ -56,5 +56,5 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 # echo -n ">>> bye bye\n"
 
-# arch-chroot /mnt
-#arch-chroot /mnt /bin/bash
+arch-chroot /mnt
+# arch-chroot /mnt /bin/bash
