@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Instalando archlinux-heyring
 
 # pacman -Syu
