@@ -1,10 +1,27 @@
 #!/bin/bash
 
-# Instalando archlinux-heyring
+# Verifica la hora del sistema: Un reloj desactualizado causa fallos en la validez de los certificados y firmas
+timedatectl set-ntp true
 
-# pacman -Syu
-# pacman -Sy archlinux-keyring #
+# Instalando archlinux-heyring
+pacman -Sy archlinux-keyring
+
+pacman-key --init
+pacman-key --populate archlinux
 # pacman-key --refresh-keys
+
+
+•
+Usa el código con precaución.
+• Actualiza el paquete de claves:
+Vuelve a instalar o actualizar las claves oficiales de los desarrolladores:bash
+sudo pacman -Sy archlinux-keyring
+Usa el código con precaución.
+• Inicializa y puebla las claves de Pacman:
+Si el problema persiste, reinicializa la base de datos de claves del sistema:bash
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+
 
 # Instalando archlinux-heyring
 
