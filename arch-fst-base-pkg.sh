@@ -11,24 +11,6 @@ pacman-key --populate archlinux
 # pacman-key --refresh-keys
 
 
-•
-Usa el código con precaución.
-• Actualiza el paquete de claves:
-Vuelve a instalar o actualizar las claves oficiales de los desarrolladores:bash
-sudo pacman -Sy archlinux-keyring
-Usa el código con precaución.
-• Inicializa y puebla las claves de Pacman:
-Si el problema persiste, reinicializa la base de datos de claves del sistema:bash
-sudo pacman-key --init
-sudo pacman-key --populate archlinux
-
-
-# Instalando archlinux-heyring
-
-# pacman-key --init
-# pacman-key --populate archlinux
-# pacman -Sy archlinux-keyring
-
 echo -n ">>>> Instalando paquetes base\n"
 
 # pacstrap /mnt base
